@@ -9,7 +9,7 @@ const greeting = {
   /* Your Summary And Greeting Section */
   username: "Sravanth Baratam",
   title: "Hi all, I'm Sravanth",
-  subTitle: emoji("A passionate Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."),
+  subTitle: emoji("A passionate Software Developer 🚀 having an experience of building Full Stack Web Applications with Angular / .Net Core and some other cool libraries and frameworks."),
   resumeLink: ""
 };
 
@@ -18,7 +18,7 @@ const greeting = {
 const socialMediaLinks = {
 
   github: "https://github.com/sravanthbaratam",
-  linkedin: "",
+  linkedin: "https://www.linkedin.com/in/sravanth-baratam-49ab3aba/",
   gmail: "sravanthbaratam@gmail.com",
   gitlab: "",
   facebook: "",
@@ -33,9 +33,9 @@ const skillsSection = {
   title: "What i do",
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
-    emoji("⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"),
+    emoji("⚡ Develop highly interactive Front end / User Interfaces for your web applications"),
     emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji("⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean")
+    emoji("⚡ Integration of third party services such as Firebase/ Azure / Digital Ocean")
   ],
 
 /* Make Sure You include correct Font Awesome Classname to view your icon
@@ -58,13 +58,13 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
     },
+    // {
+    //   skillName: "reactjs",
+    //   fontAwesomeClassname: "fab fa-react"
+    // },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: ".Net Core",
+      fontAwesomeClassname: "fab fa-windows"
     },
     {
       skillName: "angular",
@@ -80,7 +80,7 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "azure",
-      fontAwesomeClassname: "fab fa-cloud"
+      fontAwesomeClassname: "fab fa-windows"
     },
     // {
     //   skillName: "firebase",
@@ -107,26 +107,26 @@ const educationInfo = {
   viewEducation: true, // Set it to true to see education section
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      schoolName: "NIT Agartala",
+      logo: require("./assets/images/download.jfif"),
+      subHeader: "Bachelor of Technology in Computer Science",
+      duration: "July 2015 - June 2019",
+       desc: "Ranked top 10% in the program. Took courses about Software Engineering, Design and Analysis of algorithms, Operating Systems, ...",
+      // descBullets: [
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      // ]
     },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      ]
-    }
+    // {
+    //   schoolName: "Stanford University",
+    //   logo: require("./assets/images/stanfordLogo.png"),
+    //   subHeader: "Bachelor of Science in Computer Science",
+    //   duration: "September 2013 - April 2017",
+    //   desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
+    //   descBullets: [
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    //   ]
+    // }
   ]
 }
 
@@ -137,7 +137,7 @@ const techStack = {
   experience: [
     {
       Stack: "Frontend/Design",  //Insert stack or technology you have experience in
-      progressPercentage: "90%"  //Insert relative proficiency in percentage
+      progressPercentage: "60%"  //Insert relative proficiency in percentage
     },
     {
       Stack: "Backend",
@@ -145,7 +145,7 @@ const techStack = {
     },
     {
       Stack: "Programming",
-      progressPercentage: "60%"
+      progressPercentage: "70%"
     }
   ]
 };
@@ -257,15 +257,10 @@ const blogSection = {
 
   blogs: [
     // {
-    //   url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-    //   title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-    //   description: "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+    //   url: "",
+    //   title: "",
+    //   description: ""
     // },
-    // {
-    //   url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-    //   title: "Why REACT is The Best?",
-    //   description: "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    // }
   ]
 };
 
@@ -277,10 +272,10 @@ const talkSection = {
 
   talks: [
     // {
-    //   title: "Build Actions For Google Assistant",
-    //   subtitle: "Codelab at GDG DevFest Karachi 2019",
-    //   slides_url: "https://bit.ly/saadpasta-slides",
-    //   event_url: "https://www.facebook.com/events/2339906106275053/"
+    //   title: "",
+    //   subtitle: "",
+    //   slides_url: "",
+    //   event_url: ""
     // }
   ]
 };
@@ -293,7 +288,7 @@ const podcastSection = {
 
   // Please Provide with Your Podcast embeded Link
   podcast: [
-    // "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
+    // ""
   ]
 };
 
