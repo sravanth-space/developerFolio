@@ -1,39 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "85303b20e456d8770fa11214dc683000",
+    "revision": "ec0d25a3143710882cac8e8beb3707a1",
     "url": "/developerFolio/index.html"
   },
   {
-    "revision": "637903cefd1e258f9ba2",
+    "revision": "d891a46dda771e033cea",
     "url": "/developerFolio/static/css/3.00373544.chunk.css"
   },
   {
-    "revision": "5e9eb16a38749e9b9900",
+    "revision": "424b2c4a2b416f0c7d0f",
     "url": "/developerFolio/static/css/4.a922a401.chunk.css"
   },
   {
-    "revision": "86f281f4ce2810e83c13",
+    "revision": "8cd086df1ad650f0df38",
     "url": "/developerFolio/static/css/main.22fb3c05.chunk.css"
   },
   {
-    "revision": "5a9fafa331388b9ad4a1",
-    "url": "/developerFolio/static/js/2.4a531a6e.chunk.js"
+    "revision": "836ddfdd4dd6546d2a92",
+    "url": "/developerFolio/static/js/2.fa56c4c1.chunk.js"
   },
   {
-    "revision": "637903cefd1e258f9ba2",
-    "url": "/developerFolio/static/js/3.d2b1fc7c.chunk.js"
+    "revision": "d891a46dda771e033cea",
+    "url": "/developerFolio/static/js/3.04397a11.chunk.js"
   },
   {
-    "revision": "5e9eb16a38749e9b9900",
-    "url": "/developerFolio/static/js/4.de064cab.chunk.js"
+    "revision": "424b2c4a2b416f0c7d0f",
+    "url": "/developerFolio/static/js/4.7d6b502d.chunk.js"
   },
   {
-    "revision": "86f281f4ce2810e83c13",
-    "url": "/developerFolio/static/js/main.1b91f3d9.chunk.js"
+    "revision": "8cd086df1ad650f0df38",
+    "url": "/developerFolio/static/js/main.3b9cc2bc.chunk.js"
   },
   {
-    "revision": "a43a9532606885a69f58",
-    "url": "/developerFolio/static/js/runtime-main.0d0b2ce4.js"
+    "revision": "fa796f1fed1233fde848",
+    "url": "/developerFolio/static/js/runtime-main.c4db7e18.js"
   },
   {
     "revision": "21f233e19402cc4a66866a7f31191f0d",
@@ -62,6 +62,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "59389695208d7454c6607bed51ed4316",
     "url": "/developerFolio/static/media/developerActivity.59389695.svg"
+  },
+  {
+    "revision": "c1b038f02d19816aea5cdd6299648c13",
+    "url": "/developerFolio/static/media/download.c1b038f0.jfif"
   },
   {
     "revision": "8ddf76a14a2e3ad3ba62b46d49a75a74",

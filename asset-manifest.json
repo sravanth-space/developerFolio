@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/developerFolio/static/css/main.22fb3c05.chunk.css",
-    "main.js": "/developerFolio/static/js/main.1b91f3d9.chunk.js",
-    "main.js.map": "/developerFolio/static/js/main.1b91f3d9.chunk.js.map",
-    "runtime-main.js": "/developerFolio/static/js/runtime-main.0d0b2ce4.js",
-    "runtime-main.js.map": "/developerFolio/static/js/runtime-main.0d0b2ce4.js.map",
-    "static/js/2.4a531a6e.chunk.js": "/developerFolio/static/js/2.4a531a6e.chunk.js",
-    "static/js/2.4a531a6e.chunk.js.map": "/developerFolio/static/js/2.4a531a6e.chunk.js.map",
+    "main.js": "/developerFolio/static/js/main.3b9cc2bc.chunk.js",
+    "main.js.map": "/developerFolio/static/js/main.3b9cc2bc.chunk.js.map",
+    "runtime-main.js": "/developerFolio/static/js/runtime-main.c4db7e18.js",
+    "runtime-main.js.map": "/developerFolio/static/js/runtime-main.c4db7e18.js.map",
+    "static/js/2.fa56c4c1.chunk.js": "/developerFolio/static/js/2.fa56c4c1.chunk.js",
+    "static/js/2.fa56c4c1.chunk.js.map": "/developerFolio/static/js/2.fa56c4c1.chunk.js.map",
     "static/css/3.00373544.chunk.css": "/developerFolio/static/css/3.00373544.chunk.css",
-    "static/js/3.d2b1fc7c.chunk.js": "/developerFolio/static/js/3.d2b1fc7c.chunk.js",
-    "static/js/3.d2b1fc7c.chunk.js.map": "/developerFolio/static/js/3.d2b1fc7c.chunk.js.map",
+    "static/js/3.04397a11.chunk.js": "/developerFolio/static/js/3.04397a11.chunk.js",
+    "static/js/3.04397a11.chunk.js.map": "/developerFolio/static/js/3.04397a11.chunk.js.map",
     "static/css/4.a922a401.chunk.css": "/developerFolio/static/css/4.a922a401.chunk.css",
-    "static/js/4.de064cab.chunk.js": "/developerFolio/static/js/4.de064cab.chunk.js",
-    "static/js/4.de064cab.chunk.js.map": "/developerFolio/static/js/4.de064cab.chunk.js.map",
+    "static/js/4.7d6b502d.chunk.js": "/developerFolio/static/js/4.7d6b502d.chunk.js",
+    "static/js/4.7d6b502d.chunk.js.map": "/developerFolio/static/js/4.7d6b502d.chunk.js.map",
     "index.html": "/developerFolio/index.html",
-    "precache-manifest.8b0b978b3e2bef401440ad2abf203202.js": "/developerFolio/precache-manifest.8b0b978b3e2bef401440ad2abf203202.js",
+    "precache-manifest.62ec92d48b335f165414685a7e04a0dd.js": "/developerFolio/precache-manifest.62ec92d48b335f165414685a7e04a0dd.js",
     "service-worker.js": "/developerFolio/service-worker.js",
     "static/css/3.00373544.chunk.css.map": "/developerFolio/static/css/3.00373544.chunk.css.map",
     "static/css/4.a922a401.chunk.css.map": "/developerFolio/static/css/4.a922a401.chunk.css.map",
@@ -25,6 +25,7 @@
     "static/media/contactMail.webp": "/developerFolio/static/media/contactMail.68e84138.webp",
     "static/media/contactMailDark.svg": "/developerFolio/static/media/contactMailDark.51cf7192.svg",
     "static/media/developerActivity.svg": "/developerFolio/static/media/developerActivity.59389695.svg",
+    "static/media/download.jfif": "/developerFolio/static/media/download.c1b038f0.jfif",
     "static/media/facebookLogo.png": "/developerFolio/static/media/facebookLogo.8ddf76a1.png",
     "static/media/googleAssistant.svg": "/developerFolio/static/media/googleAssistant.c24ba791.svg",
     "static/media/googleAssistantLogo.webp": "/developerFolio/static/media/googleAssistantLogo.e79c6392.webp",
@@ -44,9 +45,9 @@
     "static/media/talksCardBackAlt.svg": "/developerFolio/static/media/talksCardBackAlt.b48e86c9.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0d0b2ce4.js",
-    "static/js/2.4a531a6e.chunk.js",
+    "static/js/runtime-main.c4db7e18.js",
+    "static/js/2.fa56c4c1.chunk.js",
     "static/css/main.22fb3c05.chunk.css",
-    "static/js/main.1b91f3d9.chunk.js"
+    "static/js/main.3b9cc2bc.chunk.js"
   ]
 }
