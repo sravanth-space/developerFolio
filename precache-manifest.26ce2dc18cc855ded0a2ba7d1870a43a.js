@@ -1,39 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ec0d25a3143710882cac8e8beb3707a1",
+    "revision": "d4410d683633a4b354f10e4a79fe4545",
     "url": "/developerFolio/index.html"
   },
   {
-    "revision": "d891a46dda771e033cea",
+    "revision": "637903cefd1e258f9ba2",
     "url": "/developerFolio/static/css/3.00373544.chunk.css"
   },
   {
-    "revision": "424b2c4a2b416f0c7d0f",
+    "revision": "5e9eb16a38749e9b9900",
     "url": "/developerFolio/static/css/4.a922a401.chunk.css"
   },
   {
-    "revision": "8cd086df1ad650f0df38",
-    "url": "/developerFolio/static/css/main.22fb3c05.chunk.css"
+    "revision": "6a2f549ce626d6c17a64",
+    "url": "/developerFolio/static/css/main.e5d6f4d1.chunk.css"
   },
   {
-    "revision": "836ddfdd4dd6546d2a92",
-    "url": "/developerFolio/static/js/2.fa56c4c1.chunk.js"
+    "revision": "d6df4627898d9629d0f8",
+    "url": "/developerFolio/static/js/2.fdf96133.chunk.js"
   },
   {
-    "revision": "d891a46dda771e033cea",
-    "url": "/developerFolio/static/js/3.04397a11.chunk.js"
+    "revision": "637903cefd1e258f9ba2",
+    "url": "/developerFolio/static/js/3.d2b1fc7c.chunk.js"
   },
   {
-    "revision": "424b2c4a2b416f0c7d0f",
-    "url": "/developerFolio/static/js/4.7d6b502d.chunk.js"
+    "revision": "5e9eb16a38749e9b9900",
+    "url": "/developerFolio/static/js/4.de064cab.chunk.js"
   },
   {
-    "revision": "8cd086df1ad650f0df38",
-    "url": "/developerFolio/static/js/main.3b9cc2bc.chunk.js"
+    "revision": "6a2f549ce626d6c17a64",
+    "url": "/developerFolio/static/js/main.8344fac1.chunk.js"
   },
   {
-    "revision": "fa796f1fed1233fde848",
-    "url": "/developerFolio/static/js/runtime-main.c4db7e18.js"
+    "revision": "a43a9532606885a69f58",
+    "url": "/developerFolio/static/js/runtime-main.0d0b2ce4.js"
   },
   {
     "revision": "21f233e19402cc4a66866a7f31191f0d",
@@ -86,10 +86,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b05ae5b575a7e1125610944dc152c35f",
     "url": "/developerFolio/static/media/jsFramework.b05ae5b5.svg"
-  },
-  {
-    "revision": "25bf045ca257e971124f3997d89f321c",
-    "url": "/developerFolio/static/media/logo.25bf045c.svg"
   },
   {
     "revision": "52be31441c8cf8a8a16bd7a228d428bf",
