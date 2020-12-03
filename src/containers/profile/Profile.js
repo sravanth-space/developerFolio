@@ -12,7 +12,7 @@ export default function Profile() {
   function setProfileFunction(array) {
     setrepo(array);
   }
-  function getKey(encry){
+  function getKey(encry) {
     var bytes  = CryptoJS.AES.decrypt(encry, 'Sravanth');
     var originalText = bytes.toString(CryptoJS.enc.Utf8);
  
@@ -24,7 +24,7 @@ export default function Profile() {
       request: (operation) => {
         operation.setContext({
           headers: {
-            authorization: `Bearer ${this.getkey(openSource.githubConvertedToken)}`,
+            authorization: `Bearer ${getKey(openSource.githubConvertedToken)}`,
           },
         });
       },
