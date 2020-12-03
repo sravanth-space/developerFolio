@@ -3,6 +3,7 @@ import ApolloClient, { gql } from "apollo-boost";
 import { openSource } from "../../portfolio";
 import Contact from "../contact/Contact";
 import Loading from "../loading/Loading";
+var CryptoJS = require("crypto-js");
 
 const renderLoader = () => <Loading />;
 const GithubProfileCard = lazy(() => import('../../components/githubProfileCard/GithubProfileCard'));
@@ -11,13 +12,19 @@ export default function Profile() {
   function setProfileFunction(array) {
     setrepo(array);
   }
+  function getKey(encry){
+    var bytes  = CryptoJS.AES.decrypt(encry, 'Sravanth');
+    var originalText = bytes.toString(CryptoJS.enc.Utf8);
+ 
+    return originalText;
+  }
   function getProfileData() {
     const client = new ApolloClient({
       uri: "https://api.github.com/graphql",
       request: (operation) => {
         operation.setContext({
           headers: {
-            authorization: `Bearer ${openSource.githubConvertedToken}`,
+            authorization: `Bearer ${this.getkey(openSource.githubConvertedToken)}`,
           },
         });
       },
