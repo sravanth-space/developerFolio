@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/developerFolio/static/css/main.e5d6f4d1.chunk.css",
-    "main.js": "/developerFolio/static/js/main.062be748.chunk.js",
-    "main.js.map": "/developerFolio/static/js/main.062be748.chunk.js.map",
-    "runtime-main.js": "/developerFolio/static/js/runtime-main.af7b7771.js",
-    "runtime-main.js.map": "/developerFolio/static/js/runtime-main.af7b7771.js.map",
-    "static/js/2.48228c3f.chunk.js": "/developerFolio/static/js/2.48228c3f.chunk.js",
-    "static/js/2.48228c3f.chunk.js.map": "/developerFolio/static/js/2.48228c3f.chunk.js.map",
+    "main.js": "/developerFolio/static/js/main.edd10108.chunk.js",
+    "main.js.map": "/developerFolio/static/js/main.edd10108.chunk.js.map",
+    "runtime-main.js": "/developerFolio/static/js/runtime-main.94b94239.js",
+    "runtime-main.js.map": "/developerFolio/static/js/runtime-main.94b94239.js.map",
+    "static/js/2.30256bb7.chunk.js": "/developerFolio/static/js/2.30256bb7.chunk.js",
+    "static/js/2.30256bb7.chunk.js.map": "/developerFolio/static/js/2.30256bb7.chunk.js.map",
     "static/css/3.00373544.chunk.css": "/developerFolio/static/css/3.00373544.chunk.css",
-    "static/js/3.f9b69669.chunk.js": "/developerFolio/static/js/3.f9b69669.chunk.js",
-    "static/js/3.f9b69669.chunk.js.map": "/developerFolio/static/js/3.f9b69669.chunk.js.map",
+    "static/js/3.6b1d3095.chunk.js": "/developerFolio/static/js/3.6b1d3095.chunk.js",
+    "static/js/3.6b1d3095.chunk.js.map": "/developerFolio/static/js/3.6b1d3095.chunk.js.map",
     "static/css/4.a922a401.chunk.css": "/developerFolio/static/css/4.a922a401.chunk.css",
-    "static/js/4.9cbd02ae.chunk.js": "/developerFolio/static/js/4.9cbd02ae.chunk.js",
-    "static/js/4.9cbd02ae.chunk.js.map": "/developerFolio/static/js/4.9cbd02ae.chunk.js.map",
+    "static/js/4.173e2dcd.chunk.js": "/developerFolio/static/js/4.173e2dcd.chunk.js",
+    "static/js/4.173e2dcd.chunk.js.map": "/developerFolio/static/js/4.173e2dcd.chunk.js.map",
     "index.html": "/developerFolio/index.html",
-    "precache-manifest.3b749d090539ac810d8bf6dc0cd6e7a3.js": "/developerFolio/precache-manifest.3b749d090539ac810d8bf6dc0cd6e7a3.js",
+    "precache-manifest.e2ed73b556a671a2c411c2250fbde0c1.js": "/developerFolio/precache-manifest.e2ed73b556a671a2c411c2250fbde0c1.js",
     "service-worker.js": "/developerFolio/service-worker.js",
     "static/css/3.00373544.chunk.css.map": "/developerFolio/static/css/3.00373544.chunk.css.map",
     "static/css/4.a922a401.chunk.css.map": "/developerFolio/static/css/4.a922a401.chunk.css.map",
@@ -26,6 +26,7 @@
     "static/media/contactMailDark.svg": "/developerFolio/static/media/contactMailDark.51cf7192.svg",
     "static/media/developerActivity.svg": "/developerFolio/static/media/developerActivity.59389695.svg",
     "static/media/download.jfif": "/developerFolio/static/media/download.c1b038f0.jfif",
+    "static/media/download1.jfif": "/developerFolio/static/media/download1.c4dec270.jfif",
     "static/media/facebookLogo.png": "/developerFolio/static/media/facebookLogo.8ddf76a1.png",
     "static/media/googleAssistant.svg": "/developerFolio/static/media/googleAssistant.c24ba791.svg",
     "static/media/googleAssistantLogo.webp": "/developerFolio/static/media/googleAssistantLogo.e79c6392.webp",
@@ -41,12 +42,13 @@
     "static/media/skill.svg": "/developerFolio/static/media/skill.34409398.svg",
     "static/media/stanfordLogo.png": "/developerFolio/static/media/stanfordLogo.3b758ef5.png",
     "static/media/talksCardBack.svg": "/developerFolio/static/media/talksCardBack.13780cdd.svg",
-    "static/media/talksCardBackAlt.svg": "/developerFolio/static/media/talksCardBackAlt.b48e86c9.svg"
+    "static/media/talksCardBackAlt.svg": "/developerFolio/static/media/talksCardBackAlt.b48e86c9.svg",
+    "static/media/wipro.jfif": "/developerFolio/static/media/wipro.df8769e8.jfif"
   },
   "entrypoints": [
-    "static/js/runtime-main.af7b7771.js",
-    "static/js/2.48228c3f.chunk.js",
+    "static/js/runtime-main.94b94239.js",
+    "static/js/2.30256bb7.chunk.js",
     "static/css/main.e5d6f4d1.chunk.css",
-    "static/js/main.062be748.chunk.js"
+    "static/js/main.edd10108.chunk.js"
   ]
 }

@@ -1,39 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "958bc2d3ede1c8e351dcf49bcaa234a9",
+    "revision": "c86e30ee2f57a8dfbf74289e6e17ce88",
     "url": "/developerFolio/index.html"
   },
   {
-    "revision": "258536bf469adfb5918f",
+    "revision": "8a6375f529b2cd2ecc95",
     "url": "/developerFolio/static/css/3.00373544.chunk.css"
   },
   {
-    "revision": "eba17fe19ff17e4d6814",
+    "revision": "7b1842fd7141e35079f1",
     "url": "/developerFolio/static/css/4.a922a401.chunk.css"
   },
   {
-    "revision": "cfccf812a340e41cf550",
+    "revision": "77bb030a7e39f4cfb74c",
     "url": "/developerFolio/static/css/main.e5d6f4d1.chunk.css"
   },
   {
-    "revision": "6de4c65860ea2bea5817",
-    "url": "/developerFolio/static/js/2.48228c3f.chunk.js"
+    "revision": "b72f114c8c394a98aa9d",
+    "url": "/developerFolio/static/js/2.30256bb7.chunk.js"
   },
   {
-    "revision": "258536bf469adfb5918f",
-    "url": "/developerFolio/static/js/3.f9b69669.chunk.js"
+    "revision": "8a6375f529b2cd2ecc95",
+    "url": "/developerFolio/static/js/3.6b1d3095.chunk.js"
   },
   {
-    "revision": "eba17fe19ff17e4d6814",
-    "url": "/developerFolio/static/js/4.9cbd02ae.chunk.js"
+    "revision": "7b1842fd7141e35079f1",
+    "url": "/developerFolio/static/js/4.173e2dcd.chunk.js"
   },
   {
-    "revision": "cfccf812a340e41cf550",
-    "url": "/developerFolio/static/js/main.062be748.chunk.js"
+    "revision": "77bb030a7e39f4cfb74c",
+    "url": "/developerFolio/static/js/main.edd10108.chunk.js"
   },
   {
-    "revision": "8f69d60ae7fcf7688994",
-    "url": "/developerFolio/static/js/runtime-main.af7b7771.js"
+    "revision": "d6a888431d74a4cb2c4f",
+    "url": "/developerFolio/static/js/runtime-main.94b94239.js"
   },
   {
     "revision": "21f233e19402cc4a66866a7f31191f0d",
@@ -66,6 +66,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c1b038f02d19816aea5cdd6299648c13",
     "url": "/developerFolio/static/media/download.c1b038f0.jfif"
+  },
+  {
+    "revision": "c4dec27034b1e60eb9f8719ead40ecc9",
+    "url": "/developerFolio/static/media/download1.c4dec270.jfif"
   },
   {
     "revision": "8ddf76a14a2e3ad3ba62b46d49a75a74",
@@ -130,5 +134,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b48e86c9a956d3a3a32ca4a5ae05ddc7",
     "url": "/developerFolio/static/media/talksCardBackAlt.b48e86c9.svg"
+  },
+  {
+    "revision": "df8769e8b290156da12f24c4276d1253",
+    "url": "/developerFolio/static/media/wipro.df8769e8.jfif"
   }
 ]);
