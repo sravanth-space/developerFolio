@@ -35,7 +35,7 @@ const skillsSection = {
   skills: [
     emoji("⚡ Develop highly interactive Front end / User Interfaces for your web applications"),
     emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji("⚡ Integration of third party services such as Firebase/ Azure / Digital Ocean")
+    emoji("⚡ Integration of third party services such as Azure SQL/etc")
   ],
 
 /* Make Sure You include correct Font Awesome Classname to view your icon
@@ -70,10 +70,10 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "angular",
       fontAwesomeClassname: "fab fa-angular"
     },
-    // {
-    //   skillName: "",
-    //   fontAwesomeClassname: "fab fa-npm"
-    // },
+    {
+      skillName: "Typescript",
+      fontAwesomeClassname: "fab fa-angular"
+    },
     {
       skillName: "sql-database",
       fontAwesomeClassname: "fas fa-database"
@@ -96,7 +96,7 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "Csharp",
-      fontAwesomeClassname: "fab fa-c"
+      fontAwesomeClassname: "fab fa-windows"
     }
   ]
 };
@@ -117,16 +117,16 @@ const educationInfo = {
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       // ]
     },
-    // {
-    //   schoolName: "Stanford University",
-    //   logo: require("./assets/images/stanfordLogo.png"),
-    //   subHeader: "Bachelor of Science in Computer Science",
-    //   duration: "September 2013 - April 2017",
-    //   desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-    //   descBullets: [
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    //   ]
-    // }
+    {
+      schoolName: "Sasi Junior College",
+      logo: require("./assets/images/download1.jfif"),
+      subHeader: "Mathematics Physics and chemistry",
+      duration: "June 2013 - May 2015",
+      desc: "Ranked top 5% in the program with 97.5%.",
+      // descBullets: [
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      // ]
+    }
   ]
 }
 
@@ -156,17 +156,19 @@ const techStack = {
 const workExperiences = {
   viewExperiences: true, //Set it to true to show workExperiences Section
   experience: [
-    // {
-    //   role: "Software Engineer",
-    //   company: "Facebook",
-    //   companylogo: require("./assets/images/facebookLogo.png"),
-    //   date: "June 2018 – Present",
-    //   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    //   descBullets: [
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-    //   ]
-    // },
+    {
+      role: "Software Engineer",
+      company: "Wipro Technologies",
+      companylogo: require("./assets/images/wipro.jfif"),
+      date: "July 2019 – Present",
+      desc: "As a Full-stack [Automation] developer, I design, create, test, and deploy effective test automation solutions. My primary focus is to build cloud-based automation solutions.",
+      descBullets: [
+        "Used both SCRUM (Agile) and Waterfall methodologies for Project management",
+        "Coordinate with management and support teams to deliver stable enterprise software products.",
+        "Currently, building a test automation solution for Microsoft.",
+        "Technology Stack:–  FrontEnd: Angular, Material, and Nebular – BackEnd: .Net Core Web API – Database: SQL Server(on-prem), Azure SQL server – Cloud storage: Azure Storage(containers, blobs, and tables) – serverless: Function Apps and Durable Functions(for long-running processes) – Analytics: Azure Cognitive service TextAnalytics – CI/CD: Azure DevOps – Data Visualisation: PowerBI"
+        ]
+    },
     // {
     //   role: "Front-End Developer",
     //   company: "Quora",
