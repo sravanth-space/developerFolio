@@ -157,7 +157,7 @@ const workExperiences = {
   viewExperiences: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
+      role: "Senior Software Engineer",
       company: "Wipro Technologies",
       companylogo: require("./assets/images/wipro.jfif"),
       date: "July 2019 – Present",
