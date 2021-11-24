@@ -9,7 +9,7 @@ const greeting = {
   /* Your Summary And Greeting Section */
   username: "Sravanth Baratam",
   title: "Hi all, I'm Sravanth",
-  subTitle: emoji("A passionate Software Developer 🚀 having an experience of building Full Stack Web Applications with Angular / .Net Core and some other cool libraries and frameworks."),
+  subTitle: emoji("A passionate Software Developer 🚀 having an experience of building Full Stack Web Applications with React / .Net and some other cool libraries and frameworks."),
   resumeLink: ""
 };
 
@@ -20,10 +20,12 @@ const socialMediaLinks = {
   github: "https://github.com/sravanthbaratam",
   linkedin: "https://www.linkedin.com/in/sravanth-baratam-49ab3aba/",
   gmail: "sravanthbaratam@gmail.com",
-  gitlab: "",
-  facebook: "",
-  medium: "",
-  stackoverflow: ""
+  // gitlab: "",
+  facebook: "https://www.facebook.com/sravanthbaratam/",
+  medium: "https://sravanthbaratam.medium.com/",
+  stackoverflow: "https://stackoverflow.com/users/12789289/sravanth-baratam",
+  instagram: "https://www.instagram.com/sravanth_baratam/",
+  twitter: "https://twitter.com/sravanthbaratam"
   // Instagram and Twitter are also supported in the links!
 };
 
@@ -31,7 +33,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What i do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "FULL STACK WEB DEVELOPMENT",
   skills: [
     // emoji("⚡ Develop highly interactive Front end / User Interfaces for your web applications"),
     // emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
@@ -305,7 +307,6 @@ const contactInfo = {
 
 const twitterDetails = {
 
-  userName : "sravanthbaratam"//Replace "twitter" with your twitter username without @
-
+  userName : "sravanthbaratam"
 };
 export { greeting, socialMediaLinks, skillsSection, educationInfo, techStack, workExperiences, openSource, bigProjects, achievementSection, blogSection, talkSection, podcastSection, contactInfo , twitterDetails};
