@@ -33,9 +33,9 @@ const skillsSection = {
   title: "What i do",
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
-    emoji("⚡ Develop highly interactive Front end / User Interfaces for your web applications"),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji("⚡ Integration of third party services such as Azure SQL/etc")
+    // emoji("⚡ Develop highly interactive Front end / User Interfaces for your web applications"),
+    // emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    // emoji("⚡ Integration of third party services such as Azure SQL/etc")
   ],
 
 /* Make Sure You include correct Font Awesome Classname to view your icon
@@ -50,30 +50,34 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "css3",
       fontAwesomeClassname: "fab fa-css3-alt"
     },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
+    // {
+    //   skillName: "sass",
+    //   fontAwesomeClassname: "fab fa-sass"
+    // },
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
     },
-    // {
-    //   skillName: "reactjs",
-    //   fontAwesomeClassname: "fab fa-react"
-    // },
     {
-      skillName: ".Net Core",
+      skillName: "reactjs",
+      fontAwesomeClassname: "fab fa-react"
+    },
+    {
+      skillName: "Csharp",
       fontAwesomeClassname: "fab fa-windows"
     },
     {
-      skillName: "angular",
-      fontAwesomeClassname: "fab fa-angular"
+      skillName: ".Net Web API",
+      fontAwesomeClassname: "fab fa-windows"
     },
-    {
-      skillName: "Typescript",
-      fontAwesomeClassname: "fab fa-angular"
-    },
+    // {
+    //   skillName: "angular",
+    //   fontAwesomeClassname: "fab fa-angular"
+    // },
+    // {
+    //   skillName: "Typescript",
+    //   fontAwesomeClassname: "fab fa-angular"
+    // },
     {
       skillName: "sql-database",
       fontAwesomeClassname: "fas fa-database"
@@ -90,14 +94,10 @@ https://fontawesome.com/icons?d=gallery */
     //   skillName: "python",
     //   fontAwesomeClassname: "fab fa-python"
     // },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    },
-    {
-      skillName: "Csharp",
-      fontAwesomeClassname: "fab fa-windows"
-    }
+    // {
+    //   skillName: "docker",
+    //   fontAwesomeClassname: "fab fa-docker"
+    // },
   ]
 };
 
@@ -166,7 +166,7 @@ const workExperiences = {
         "Used both SCRUM (Agile) and Waterfall methodologies for Project management",
         "Coordinate with management and support teams to deliver stable enterprise software products.",
         "Currently, building a test automation solution for Microsoft.",
-        "Technology Stack:–  FrontEnd: Angular, Material, and Nebular – BackEnd: .Net Core Web API – Database: SQL Server(on-prem), Azure SQL server – Cloud storage: Azure Storage(containers, blobs, and tables) – serverless: Function Apps and Durable Functions(for long-running processes) – Analytics: Azure Cognitive service TextAnalytics – CI/CD: Azure DevOps – Data Visualisation: PowerBI"
+        "Technology Stack:–  FrontEnd: Angular, Material, and Nebular – BackEnd: .Net Web API – Database: SQL Server(on-prem), Azure SQL server"
         ]
     },
     // {
