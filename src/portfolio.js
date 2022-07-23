@@ -40,8 +40,8 @@ const skillsSection = {
     // emoji("⚡ Integration of third party services such as Azure SQL/etc")
   ],
 
-/* Make Sure You include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
+  /* Make Sure You include correct Font Awesome Classname to view your icon
+  https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
@@ -113,7 +113,7 @@ const educationInfo = {
       logo: require("./assets/images/download.jfif"),
       subHeader: "Bachelor of Technology in Computer Science",
       duration: "July 2015 - June 2019",
-       desc: "Ranked top 10% in the program. Took courses about Software Engineering, Design and Analysis of algorithms, Operating Systems, ...",
+      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Design and Analysis of algorithms, Operating Systems, ...",
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
@@ -162,14 +162,26 @@ const workExperiences = {
       role: "Senior Software Engineer",
       company: "Wipro Technologies",
       companylogo: require("./assets/images/wipro.jfif"),
-      date: "July 2019 – Present",
+      date: "July 2019 – Feb 2022",
       desc: "As a Full-stack [Automation] developer, I design, create, test, and deploy effective test automation solutions. My primary focus is to build cloud-based automation solutions.",
       descBullets: [
         "Used both SCRUM (Agile) and Waterfall methodologies for Project management",
         "Coordinate with management and support teams to deliver stable enterprise software products.",
         "Currently, building a test automation solution for Microsoft.",
         "Technology Stack:–  FrontEnd: Angular, Material, and Nebular – BackEnd: .Net Web API – Database: SQL Server(on-prem), Azure SQL server"
-        ]
+      ]
+    },
+    {
+      role: "Software Engineer II",
+      company: "FactSet Research Systems Inc",
+      companylogo: require("./assets/images/factset-logo.svg"),
+      date: "March 2022 – Present",
+      desc: "As a Full-stack developer, I design, create, test, and deploy effective solutions.",
+      descBullets: [
+        "Used both SCRUM (Agile) for Project management",
+        "Coordinate with management and support teams to deliver stable enterprise software products.",
+        "Technology Stack:–  FrontEnd: Vue, BootStrap – BackEnd: Python, FAST API – Cloud: Heroku, AWS"
+      ]
     },
     // {
     //   role: "Front-End Developer",
@@ -194,7 +206,7 @@ To know how to get github key look at readme.md */
 const openSource = {
   githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
   githubUserName: "sravanthbaratam", // Change to your github username to view your profile in Contact Section.
-  showGithubProfile :"true" // Set true or false to show Contact profile using Github, defaults to false
+  showGithubProfile: "true" // Set true or false to show Contact profile using Github, defaults to false
 };
 
 
@@ -307,6 +319,6 @@ const contactInfo = {
 
 const twitterDetails = {
 
-  userName : "sravanthbaratam"
+  userName: "sravanthbaratam"
 };
-export { greeting, socialMediaLinks, skillsSection, educationInfo, techStack, workExperiences, openSource, bigProjects, achievementSection, blogSection, talkSection, podcastSection, contactInfo , twitterDetails};
+export { greeting, socialMediaLinks, skillsSection, educationInfo, techStack, workExperiences, openSource, bigProjects, achievementSection, blogSection, talkSection, podcastSection, contactInfo, twitterDetails };
