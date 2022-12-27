@@ -1,10 +1,10 @@
-﻿
+
 /* Change this file to get your personal Portfolio */
 
 // Your Summary And Greeting Section
 
 import emoji from "react-easy-emoji";
-
+import factsetLogo from './assets/images/factset-logo.svg'
 const greeting = {
   /* Your Summary And Greeting Section */
   username: "Sravanth Baratam",
@@ -138,12 +138,12 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design",  //Insert stack or technology you have experience in
-      progressPercentage: "60%"  //Insert relative proficiency in percentage
+      Stack: "Frontend",  //Insert stack or technology you have experience in
+      progressPercentage: "80%"  //Insert relative proficiency in percentage
     },
     {
       Stack: "Backend",
-      progressPercentage: "70%"
+      progressPercentage: "60%"
     },
     {
       Stack: "Programming",
@@ -174,7 +174,7 @@ const workExperiences = {
     {
       role: "Software Engineer II",
       company: "FactSet Research Systems Inc",
-      companylogo: require("./assets/images/factset-logo.svg"),
+      companylogo: factsetLogo,
       date: "March 2022 – Present",
       desc: "As a Full-stack developer, I design, create, test, and deploy effective solutions.",
       descBullets: [

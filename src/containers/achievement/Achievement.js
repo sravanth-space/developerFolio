@@ -6,10 +6,10 @@ import { Fade } from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 export default function Achievement() {
   const { isDark } = useContext(StyleContext);
-  function openUrlInNewTab(url) {
-    var win = window.open(url, "_blank");
-    win.focus();
-  }
+  // function openUrlInNewTab(url) {
+  //   var win = window.open(url, "_blank");
+  //   win.focus();
+  // }
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="achievements">

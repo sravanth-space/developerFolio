@@ -1,4 +1,4 @@
-﻿import React, { useContext } from "react";
+import React, { useContext } from "react";
 import "./Greeting.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
@@ -6,6 +6,7 @@ import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
 import emoji from "react-easy-emoji";
 import StyleContext from "../../contexts/StyleContext";
+import manOnTable from '../../assets/images/manOnTable.svg'
 
 export default function Greeting() {
   const { isDark } = useContext(StyleContext);
@@ -45,7 +46,7 @@ export default function Greeting() {
           <div className="greeting-image-div">
             <img
               alt="sravanth sitting on table"
-              src={require("../../assets/images/manOnTable.svg")}
+              src={manOnTable}
             ></img>
           </div>
         </div>

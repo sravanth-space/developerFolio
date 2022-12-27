@@ -30,6 +30,7 @@ export default function Podcast() {
                   src={podcastLink}
                   frameborder="0"
                   scrolling="no"
+                  title="podcast"
                 ></iframe>
               </div>
             );

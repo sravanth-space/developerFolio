@@ -4,7 +4,7 @@ import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import { skillsSection } from "../../portfolio";
 import { Fade } from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
-
+import developerActivity from '../../assets/images/developerActivity.svg'
 export default function Skills() {
   const { isDark } = useContext(StyleContext);
   return (
@@ -14,7 +14,7 @@ export default function Skills() {
           <div className="skills-image-div">
             <img
               alt="sravanth Working"
-              src={require("../../assets/images/developerActivity.svg")}
+              src={developerActivity}
             ></img>
           </div>
         </Fade>
