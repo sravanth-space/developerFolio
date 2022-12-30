@@ -5,11 +5,27 @@
 
 import emoji from "react-easy-emoji";
 import factsetLogo from './assets/images/factset-logo.svg'
+import reduxLogo from './assets/images/redux-icon.svg'
+import javascriptLogo from './assets/images/javascriptLogo.svg'
+import pythonLogo from './assets/images/pythonLogo.svg'
+import typescriptLogo from './assets/images/typescriptLogo.svg'
+import reactLogo from './assets/images/react-js-icon.svg'
+import sqlLogo from './assets/images/sql-server-icon.svg'
+import sassLogo from './assets/images/sass-icon.svg'
+import jestLogo from './assets/images/jest-js-icon.svg'
+import cyPressLogo from './assets/images/cypress.svg'
+import htmlLogo from './assets/images/html-icon.svg'
+import cssLogo from './assets/images/css-icon.svg'
+import firebaseLogo from './assets/images/google-firebase-icon.svg'
+import azureLogo from './assets/images/azure-icon.svg'
+// import awsLogo from './assets/images/aws-icon.svg'
+import fastAPILogo from './assets/images/fastapi.svg'
+import pixlLogo from './assets/images/pixl_logo.svg'
 const greeting = {
   /* Your Summary And Greeting Section */
   username: "Sravanth Baratam",
-  title: "Hi all, I'm Sravanth",
-  subTitle: emoji("A passionate Software Developer 🚀 having an experience of building Full Stack Web Applications with React / .Net and some other cool libraries and frameworks."),
+  title: "Hi there, I'm Sravanth",
+  subTitle: emoji("A passionate Software Developer 🚀 having an experience of building Full Stack Web Applications with React / fastAPI and some other cool libraries and frameworks."),
   resumeLink: "https://drive.google.com/file/d/1ivXNWjz9lZiEBKmarZL67wkmSJt5wwKy/view?usp=sharing"
 };
 
@@ -26,7 +42,6 @@ const socialMediaLinks = {
   stackoverflow: "https://stackoverflow.com/users/12789289/sravanth-baratam",
   instagram: "https://www.instagram.com/sravanth_baratam/",
   twitter: "https://twitter.com/sravanthbaratam"
-  // Instagram and Twitter are also supported in the links!
 };
 
 // Your Skills Section
@@ -35,9 +50,9 @@ const skillsSection = {
   title: "What i do",
   subTitle: "FULL STACK WEB DEVELOPMENT",
   skills: [
-    // emoji("⚡ Develop highly interactive Front end / User Interfaces for your web applications"),
-    // emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    // emoji("⚡ Integration of third party services such as Azure SQL/etc")
+    emoji("⚡ Develop highly interactive Front end / User Interfaces for your web applications"),
+    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Integration of third party services such as Azure SQL/etc")
   ],
 
   /* Make Sure You include correct Font Awesome Classname to view your icon
@@ -46,56 +61,76 @@ const skillsSection = {
   softwareSkills: [
     {
       skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      logo: htmlLogo
     },
     {
       skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      logo: cssLogo
     },
-    // {
-    //   skillName: "sass",
-    //   fontAwesomeClassname: "fab fa-sass"
-    // },
+    {
+      skillName: "sass",
+      logo: sassLogo
+    },
     {
       skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      logo: javascriptLogo
+    },
+    {
+      skillName: "Typescript",
+      logo: typescriptLogo
     },
     {
       skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      logo: reactLogo
     },
     {
-      skillName: "Csharp",
-      fontAwesomeClassname: "fab fa-windows"
+      skillName: "Redux[Toolkit]",
+      logo: reduxLogo
+    },
+    // {
+    //   skillName: "Csharp",
+    //   fontAwesomeClassname: "fab fa-windows"
+    // },
+    // {
+    //   skillName: ".Net Web API",
+    //   fontAwesomeClassname: "fab fa-windows"
+    // },
+    {
+      skillName: "Jest",
+      logo: jestLogo
     },
     {
-      skillName: ".Net Web API",
-      fontAwesomeClassname: "fab fa-windows"
+      skillName: "CyPress",
+      logo: cyPressLogo
+    },
+    {
+      skillName: "python",
+      logo: pythonLogo
+    },
+    {
+      skillName: "fastAPI",
+      logo: fastAPILogo
     },
     // {
     //   skillName: "angular",
     //   fontAwesomeClassname: "fab fa-angular"
     // },
-    // {
-    //   skillName: "Typescript",
-    //   fontAwesomeClassname: "fab fa-angular"
-    // },
     {
       skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
+      logo: sqlLogo
     },
     {
       skillName: "azure",
-      fontAwesomeClassname: "fab fa-windows"
+      logo: azureLogo
     },
     // {
-    //   skillName: "firebase",
-    //   fontAwesomeClassname: "fas fa-fire"
+    //   skillName: "aws",
+    //   logo: awsLogo
     // },
-    // {
-    //   skillName: "python",
-    //   fontAwesomeClassname: "fab fa-python"
-    // },
+    {
+      skillName: "firebase",
+      logo: firebaseLogo
+    },
     // {
     //   skillName: "docker",
     //   fontAwesomeClassname: "fab fa-docker"
@@ -111,9 +146,9 @@ const educationInfo = {
     {
       schoolName: "NIT Agartala",
       logo: require("./assets/images/download.jfif"),
-      subHeader: "Bachelor of Technology in Computer Science",
+      subHeader: "Bachelor of Technology in Computer Science and Engineering",
       duration: "July 2015 - June 2019",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Design and Analysis of algorithms, Operating Systems, ...",
+      desc: "Ranked top 10% in the program with CGPA: 8.1. Took courses about Software Engineering, Design and Analysis of algorithms, Operating Systems, ...",
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
@@ -158,6 +193,27 @@ const techStack = {
 const workExperiences = {
   viewExperiences: true, //Set it to true to show workExperiences Section
   experience: [
+
+
+    {
+      role: "Front-End Developer",
+      company: "PiXL Tech LTD",
+      companylogo: pixlLogo,
+      date: "March 2023 – Present",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      role: "Software Engineer II",
+      company: "FactSet Research Systems Inc",
+      companylogo: factsetLogo,
+      date: "March 2022 – Jan 2023",
+      desc: "As a Full-stack developer, I design, create, test, and deploy effective solutions.",
+      descBullets: [
+        "Used both SCRUM (Agile) for Project management",
+        "Coordinate with management and support teams to deliver stable enterprise software products.",
+        "Technology Stack:–  FrontEnd: Vue, BootStrap – BackEnd: Python, FAST API – Cloud: Heroku, AWS"
+      ]
+    },
     {
       role: "Senior Software Engineer",
       company: "Wipro Technologies",
@@ -171,25 +227,6 @@ const workExperiences = {
         "Technology Stack:–  FrontEnd: Angular, Material, and Nebular – BackEnd: .Net Web API – Database: SQL Server(on-prem), Azure SQL server"
       ]
     },
-    {
-      role: "Software Engineer II",
-      company: "FactSet Research Systems Inc",
-      companylogo: factsetLogo,
-      date: "March 2022 – Present",
-      desc: "As a Full-stack developer, I design, create, test, and deploy effective solutions.",
-      descBullets: [
-        "Used both SCRUM (Agile) for Project management",
-        "Coordinate with management and support teams to deliver stable enterprise software products.",
-        "Technology Stack:–  FrontEnd: Vue, BootStrap – BackEnd: Python, FAST API – Cloud: Heroku, AWS"
-      ]
-    },
-    // {
-    //   role: "Front-End Developer",
-    //   company: "Quora",
-    //   companylogo: require("./assets/images/quoraLogo.png"),
-    //   date: "May 2017 – May 2018",
-    //   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    // },
     // {
     //   role: "Software Engineer Intern",
     //   company: "Airbnb",
