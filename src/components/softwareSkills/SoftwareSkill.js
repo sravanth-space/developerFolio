@@ -10,15 +10,15 @@ export default function SoftwareSkill() {
           {skillsSection.softwareSkills.map(skills => {
             if (skills.fontAwesomeClassname)
               return (
-                <li className="software-skill-inline" name={skills.skillName}>
+                <li className="software-skill-inline" name={skills.skillName} key={skills.skillName}>
                   <i className={skills.fontAwesomeClassname}></i>
                   <p>{skills.skillName}</p>
                 </li>
               );
             else
               return (
-                <li className="software-skill-inline" name={skills.skillName}>
-                  <img src={skills.logo} alt={skills.skillName}/>
+                <li className="software-skill-inline" name={skills.skillName} key={skills.skillName}>
+                  <img src={skills.logo} alt={skills.skillName} />
                   <p>{skills.skillName}</p>
                 </li>
               )

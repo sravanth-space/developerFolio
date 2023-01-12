@@ -1,5 +1,5 @@
 import React, { createRef, useContext } from "react";
-import { Fade, Slide } from "react-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 import "./EducationCard.css";
 import StyleContext from "../../contexts/StyleContext";
 
@@ -8,7 +8,7 @@ export default function EducationCard({ school }) {
 
   const GetDescBullets = ({ descBullets }) => {
     return descBullets
-      ? descBullets.map((item) => <li className="subTitle">{item}</li>)
+      ? descBullets.map((item) => <li key={item} className="subTitle">{item}</li>)
       : null;
   };
   const { isDark } = useContext(StyleContext);

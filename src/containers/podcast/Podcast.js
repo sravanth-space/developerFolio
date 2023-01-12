@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "./Podcast.css";
 import { podcastSection } from "../../portfolio";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Podcast() {

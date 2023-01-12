@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "./Skills.css";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import { skillsSection } from "../../portfolio";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import StyleContext from "../../contexts/StyleContext";
 import developerActivity from '../../assets/images/developerActivity.svg'
 export default function Skills() {
@@ -44,6 +44,7 @@ export default function Skills() {
                         ? "dark-mode subTitle skills-text"
                         : "subTitle skills-text"
                     }
+                    key={skills}
                   >
                     {skills}
                   </p>

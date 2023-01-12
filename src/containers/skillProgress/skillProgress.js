@@ -1,7 +1,7 @@
 import React from "react";
 import "./Progress.css";
 import { techStack } from "../../portfolio";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import skill from "../../assets/images/skill.svg"
 export default function StackProgress() {
     if (techStack.viewSkillBars) {
@@ -16,7 +16,7 @@ export default function StackProgress() {
                                 width: exp.progressPercentage
                             };
                             return (
-                                <div className="skill">
+                                <div className="skill" key={exp.Stack}>
                                     <p>{exp.Stack}</p>
                                     <div className="meter">
                                         <span style={progressStyle}></span>

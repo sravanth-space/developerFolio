@@ -25,7 +25,7 @@ const greeting = {
   /* Your Summary And Greeting Section */
   username: "Sravanth Baratam",
   title: "Hi there, I'm Sravanth",
-  subTitle: emoji("A passionate Software Developer 🚀 having an experience of building Full Stack Web Applications with React / fastAPI and some other cool libraries and frameworks."),
+  subTitle: emoji("A passionate Software Developer 🚀 having an experience of building Full Stack Web Applications with React / FastAPI and some other cool libraries and frameworks."),
   resumeLink: "https://drive.google.com/file/d/1ivXNWjz9lZiEBKmarZL67wkmSJt5wwKy/view?usp=sharing"
 };
 
@@ -243,7 +243,8 @@ To know how to get github key look at readme.md */
 const openSource = {
   githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
   githubUserName: "sravanthbaratam", // Change to your github username to view your profile in Contact Section.
-  showGithubProfile: "true" // Set true or false to show Contact profile using Github, defaults to false
+  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to false,
+  display: true
 };
 
 
@@ -261,7 +262,8 @@ const bigProjects = {
     //   image: require("./assets/images/nextuLogo.webp"),
     //   link: "http://nextu.se/"
     // }
-  ]
+  ],
+  display: true
 };
 
 // Your Achievement Section Include Your Certification Talks and More
