@@ -5,6 +5,8 @@
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
+    "@sentry/react": "^7.30.0",
+    "@sentry/tracing": "^7.30.0",
     "axios": "^1.2.2",
     "colorthief": "^2.3.0",
     "crypto-js": "^4.0.0",
