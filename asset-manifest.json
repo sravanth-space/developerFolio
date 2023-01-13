@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/developerFolio/static/css/main.9567dc72.css",
-    "main.js": "/developerFolio/static/js/main.5b6bb307.js",
+    "main.js": "/developerFolio/static/js/main.ba6b1b17.js",
     "static/css/580.6a9d885a.chunk.css": "/developerFolio/static/css/580.6a9d885a.chunk.css",
-    "static/js/580.68b57dc2.chunk.js": "/developerFolio/static/js/580.68b57dc2.chunk.js",
+    "static/js/580.3d8ba262.chunk.js": "/developerFolio/static/js/580.3d8ba262.chunk.js",
     "static/css/934.4762cd7f.chunk.css": "/developerFolio/static/css/934.4762cd7f.chunk.css",
-    "static/js/934.26d97db0.chunk.js": "/developerFolio/static/js/934.26d97db0.chunk.js",
+    "static/js/934.9eb01dd6.chunk.js": "/developerFolio/static/js/934.9eb01dd6.chunk.js",
     "static/media/stanfordLogo.png": "/developerFolio/static/media/stanfordLogo.5a8e3a0a00949c93a9b8.png",
     "static/media/harvardLogo.png": "/developerFolio/static/media/harvardLogo.0038dd288d80ae8432af.png",
     "static/media/Montserrat-Regular.ttf": "/developerFolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
@@ -52,14 +52,14 @@
     "static/media/talksCardBack.svg": "/developerFolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "static/media/fastapi.svg": "/developerFolio/static/media/fastapi.b342b1c57fecaf0ae1778beb71396c17.svg",
     "main.9567dc72.css.map": "/developerFolio/static/css/main.9567dc72.css.map",
-    "main.5b6bb307.js.map": "/developerFolio/static/js/main.5b6bb307.js.map",
+    "main.ba6b1b17.js.map": "/developerFolio/static/js/main.ba6b1b17.js.map",
     "580.6a9d885a.chunk.css.map": "/developerFolio/static/css/580.6a9d885a.chunk.css.map",
-    "580.68b57dc2.chunk.js.map": "/developerFolio/static/js/580.68b57dc2.chunk.js.map",
+    "580.3d8ba262.chunk.js.map": "/developerFolio/static/js/580.3d8ba262.chunk.js.map",
     "934.4762cd7f.chunk.css.map": "/developerFolio/static/css/934.4762cd7f.chunk.css.map",
-    "934.26d97db0.chunk.js.map": "/developerFolio/static/js/934.26d97db0.chunk.js.map"
+    "934.9eb01dd6.chunk.js.map": "/developerFolio/static/js/934.9eb01dd6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9567dc72.css",
-    "static/js/main.5b6bb307.js"
+    "static/js/main.ba6b1b17.js"
   ]
 }
