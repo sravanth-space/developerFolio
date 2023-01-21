@@ -1,0 +1,47 @@
+name: Scrape Data
+on:
+    workflow_dispatch:
+    schedule:
+        - cron: "0 0 * * *" # https://crontab.guru/every-day
+env:
+    DATA_FILENAME: "src/data/"
+    PROFILE_DATA: "src/data/profile.json"
+    BLOG_DATA: "src/data/blogs.json"
+jobs:
+    scrape:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - name: Set up Node.js version
+              uses: actions/setup-node@v3
+              with:
+                node-version: '16.x'
+            - name: yarn install
+              run: |
+                yarn install
+            - name: Scrape Data
+              run: |
+                yarn scrape
+            - name: Commit files
+              id: commit
+              run: |
+                git config --local user.email "action@github.com"
+                git config --local user.name "github-actions"
+                git add --all
+                if [-z "$(git status --porcelain)"]; then
+                  echo "::set-output name=push::false"
+                else
+                  git commit -m "chore(generated): updated jsons automatically" -a
+                  echo "::set-output name=push::true"
+                fi
+              shell: bash
+            - name: Push changes
+              if: steps.commit.outputs.push == 'true'
+              uses: ad-m/github-push-action@master
+              with:
+                github_token: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Upload artifact
+              uses: actions/upload-artifact@v3
+              with:
+                  path: $DATA_FILENAME
