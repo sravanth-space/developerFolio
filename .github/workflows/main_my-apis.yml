@@ -7,6 +7,8 @@ env:
     DATA_FILENAME: "src/data/"
     PROFILE_DATA: "src/data/profile.json"
     BLOG_DATA: "src/data/blogs.json"
+    CI: false
+    REACT_APP_GITHUB_TOKEN: ${{ secrets.OPEN_SOURCE_TOKEN }}
 jobs:
     scrape:
         runs-on: ubuntu-latest
