@@ -217,7 +217,7 @@ const workExperiences = {
     {
       role: "Senior Software Engineer",
       company: "Wipro Technologies",
-      companylogo: require("./assets/images/wipro.jfif"),
+      companylogo: require("./assets/images/wipro.png"),
       date: "July 2019 – Feb 2022",
       desc: "As a Full-stack [Automation] developer, I design, create, test, and deploy effective test automation solutions. My primary focus is to build cloud-based automation solutions.",
       descBullets: [

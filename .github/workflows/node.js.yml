@@ -8,7 +8,7 @@ on:
       - main
   workflow_run:
     workflows: ["Scrape Data"]
-    types: [requested]
+    types: [completed]
 
 jobs:
   build-and-deploy:
