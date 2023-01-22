@@ -4,7 +4,7 @@ on:
     schedule:
         - cron: "0 0 * * *" # https://crontab.guru/every-day
 env:
-    DATA_FILENAME: "src/data/"
+    DATA_FILENAME: "src/data"
     PROFILE_DATA: "src/data/profile.json"
     BLOG_DATA: "src/data/blogs.json"
     CI: false
