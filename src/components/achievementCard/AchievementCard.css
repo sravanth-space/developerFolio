@@ -30,7 +30,7 @@
 }
 .certificate-image-div {
   position: relative;
-  height: 250px;
+  height: auto;
   overflow: hidden;
   text-align: center;
 }

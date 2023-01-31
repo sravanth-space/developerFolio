@@ -24,7 +24,7 @@ export default function GithubProfileCard({ prof }) {
             {prof.location !== null &&
               <div className="location-div">
                 <span className="desc-prof">
-                  <img alt="locationLogo" src={locationLogo} />{prof.location}
+                  <i className="fa-solid fa-location-dot"></i> {prof.location}
                 </span>
               </div>}
             <div className="opp-div">

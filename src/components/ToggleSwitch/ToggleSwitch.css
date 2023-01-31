@@ -6,7 +6,7 @@
 }
 
 /* Fix visible slider checkbox */
-input{
+input {
   transform: scale(0.5);
 }
 
@@ -39,7 +39,7 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+  box-shadow: #2196f3;
 }
 
 input:checked + .slider::before {
@@ -51,10 +51,14 @@ input:checked + .slider::before {
 /* Rounded sliders */
 .slider.round {
   border-radius: 34px;
+  display: flex;
+  align-items: center;
 }
 
 .slider.round::before {
   border-radius: 50%;
+  display: grid;
+  place-items: center;
 }
 
 .slider::after {
@@ -69,6 +73,13 @@ input:checked + .slider::after {
   position: absolute;
   right: 56.3%;
   bottom: 14.5%;
+}
+
+.emoji {
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  margin-left: 2px;
 }
 
 @media all and (max-width: 786px) and (min-width: 425px) {
@@ -93,4 +104,3 @@ input:checked + .slider::after {
     bottom: 7.5% !important;
   }
 }
-

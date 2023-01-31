@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../components/header/Header";
 import Greeting from "./greeting/Greeting";
 import Skills from "./skills/Skills";
@@ -8,58 +8,83 @@ import Projects from "./projects/Projects";
 import StartupProject from "./StartupProjects/StartupProject";
 import Achievement from "./achievement/Achievement";
 import Blogs from "./blogs/Blogs";
-// import Contact from "./contact/Contact";
 import Footer from "../components/footer/Footer";
 import Talks from "./talks/Talks";
 import Podcast from "./podcast/Podcast";
 import Education from "./education/Education";
-import Top from "./topbutton/Top";
+import ScrollToTopButton from "./topbutton/Top";
 import Twitter from "./twitter-embed/twitter";
-import { StyleProvider } from "../contexts/StyleContext";
-import "./Main.css";
 import Profile from "./profile/Profile";
-// import { educationInfo } from "../portfolio";
+import SplashScreen from "./splashScreen/SplashScreen";
+import { StyleProvider } from "../contexts/StyleContext";
+import { useLocalStorage } from "../hooks/useLocalStorage";
+import "./Main.css";
+import {
+  greeting,
+  workExperiences,
+  skillsSection,
+  openSource,
+  blogSection,
+  talkSection,
+  achievementSection, bigProjects, educationInfo, splashScreen
+} from "../portfolio";
+const Main = () => {
+  const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
+  const [isDark, setIsDark] = useLocalStorage("isDark", darkPref.matches);
+  const [isShowingSplashAnimation, setIsShowingSplashAnimation] =
+    useState(true);
+  const viewExperience = workExperiences.display;
+  const viewOpenSource = openSource.display;
+  const viewSkills = skillsSection.display;
+  const viewAchievement = achievementSection.display;
+  const viewBlog = blogSection.display;
+  const viewTalks = talkSection.display;
+  const viewStartups = bigProjects.display;
+  const viewEducation = educationInfo.display;
+  useEffect(() => {
+    if (splashScreen.enabled) {
+      const splashTimer = setTimeout(
+        () => setIsShowingSplashAnimation(false),
+        splashScreen.duration
+      );
+      return () => {
+        clearTimeout(splashTimer);
+      };
+    }
+  }, []);
 
-export default class Main extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isDark: false,
-    };
-  }
-
-  componentDidMount() {
-    const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
-    this.setState({ isDark: darkPref.matches });
-  }
-  changeTheme = () => {
-    this.setState({ isDark: !this.state.isDark });
+  const changeTheme = () => {
+    setIsDark(!isDark);
   };
 
-  render() {
-    return (
-      <div className={this.state.isDark ? "dark-mode" : null}>
-        <StyleProvider
-          value={{ isDark: this.state.isDark, changeTheme: this.changeTheme }}
-        >
-          <Header />
-          <Greeting />
-          <Skills />
-          <StackProgress />
-          <WorkExperience />
-          <Projects />
-          <Education />
-          <StartupProject />
-          <Achievement />
-          <Blogs />
-          <Talks />
-          <Twitter />
-          <Podcast />
-          <Profile />
-          <Footer />
-          <Top />
-        </StyleProvider>
-      </div>
-    );
-  }
-}
+  return (
+    <div className={isDark ? "dark-mode" : null}>
+      <StyleProvider value={{ isDark: isDark, changeTheme: changeTheme }}>
+        {isShowingSplashAnimation && splashScreen.enabled ? (
+          <SplashScreen />
+        ) : (
+          <>
+            <Header />
+            <Greeting />
+            {viewSkills && <Skills />}
+            <StackProgress />
+            {viewEducation && <Education />}
+            {viewExperience && <WorkExperience />}
+            {viewOpenSource && <Projects />}
+            {viewStartups && <StartupProject />}
+            {viewAchievement && <Achievement />}
+            {viewBlog && <Blogs />}
+            <Talks />
+            <Twitter />
+            {viewTalks && <Podcast />}
+            <Profile />
+            <Footer />
+            <ScrollToTopButton />
+          </>
+        )}
+      </StyleProvider>
+    </div>
+  );
+};
+
+export default Main;

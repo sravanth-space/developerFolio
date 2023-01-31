@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import StyleContext from "../../contexts/StyleContext";
 import "./ToggleSwitch.css";
+import emoji from "react-easy-emoji";
 const ToggleSwitch = () => {
   const [isChecked, setChecked] = useState(false);
   const styleContext = useContext(StyleContext);
@@ -15,7 +16,9 @@ const ToggleSwitch = () => {
           setChecked(!isChecked);
         }}
       />
-      <span className="slider round"></span>
+      <span className="slider round">
+        <span className="emoji">{isChecked ? emoji("🌜") : emoji("☀️")}</span>
+      </span>
     </label>
   );
 };

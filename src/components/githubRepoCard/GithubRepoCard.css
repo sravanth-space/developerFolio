@@ -73,11 +73,38 @@
 
 .dark-card-mode {
   background-color: #171c28 !important;
-  color:white;
+  color: white;
 }
 .dark-card-mode p {
-  color:white;
+  color: white;
 }
 .dark-card-mode:hover {
   background-color: #55198b !important;
+}
+
+.repo-card-topic {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.repo-card-topic span.repo-topic {
+  background: #55198b;
+  color: #f5f2f4;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 4px;
+  display: inline-flex;
+  font-size: 0.75rem;
+  height: 2em;
+  justify-content: center;
+  white-space: nowrap;
+  line-height: 1.5;
+  margin: 0 0.5rem 0.5rem 0;
+  padding: 0 0.75em;
+  /* cursor: pointer; */
+  transition: 0.2s ease-in;
+}
+span.repo-topic:hover {
+  background: #8c43ce;
 }

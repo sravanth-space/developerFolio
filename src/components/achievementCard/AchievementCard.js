@@ -23,7 +23,7 @@ export default function AchievementCard({ cardInfo, isDark }) {
       <div className="certificate-card-footer">
         {cardInfo.footer.map((v, i) => {
           return (
-            <span
+            <span key={i}
               className={isDark ? "dark-mode certificate-tag" : "certificate-tag"}
               onClick={() => openUrlInNewTab(v.url)}
             >

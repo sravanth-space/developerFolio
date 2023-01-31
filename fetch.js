@@ -43,6 +43,16 @@ if (USE_GITHUB_DATA === "true") {
                 totalCount
               }
               url
+              homepageUrl
+              repositoryTopics(first: 5) {
+                edges {
+                  node {
+                    topic {
+                      name
+                    }
+                  }
+                }
+              }
               id
               diskUsage
               primaryLanguage {

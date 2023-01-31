@@ -1,6 +1,5 @@
 
 /* Change this file to get your personal Portfolio */
-
 // Your Summary And Greeting Section
 
 import emoji from "react-easy-emoji";
@@ -21,6 +20,20 @@ import azureLogo from './assets/images/azure-icon.svg'
 // import awsLogo from './assets/images/aws-icon.svg'
 import fastAPILogo from './assets/images/fastapi.svg'
 import pixlLogo from './assets/images/pixl_logo.svg'
+import wiproLogo from './assets/images/Wipro_Primary_Logo_Color_RGB.svg'
+import fccLogo from './assets/images/fcc_primary_large.svg'
+import spotAwardLogo from './assets/images/factset-spot-award.png'
+import azureFundamentalsLogo from './assets/images/azure_fundamentals.png'
+import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+// Splash Screen
+
+const splashScreen = {
+  enabled: true, // set false to disable splash screen
+  animation: splashAnimation,
+  duration: 100 // Set animation duration as per your animation
+};
+
+
 const greeting = {
   /* Your Summary And Greeting Section */
   username: "Sravanth Baratam",
@@ -34,19 +47,21 @@ const greeting = {
 const socialMediaLinks = {
 
   github: "https://github.com/sravanthbaratam",
-  linkedin: "https://www.linkedin.com/in/sravanth-baratam-49ab3aba/",
+  linkedin: "https://www.linkedin.com/in/sravanth-baratam/",
   gmail: "sravanthbaratam@gmail.com",
   // gitlab: "",
   facebook: "https://www.facebook.com/sravanthbaratam/",
   medium: "https://sravanthbaratam.medium.com/",
   stackoverflow: "https://stackoverflow.com/users/12789289/sravanth-baratam",
   instagram: "https://www.instagram.com/sravanth_baratam/",
-  twitter: "https://twitter.com/sravanthbaratam"
+  twitter: "https://twitter.com/sravanthbaratam",
+  phone: "+44 7767990143"
 };
 
 // Your Skills Section
 
 const skillsSection = {
+  display: true,
   title: "What i do",
   subTitle: "FULL STACK WEB DEVELOPMENT",
   skills: [
@@ -141,10 +156,10 @@ const skillsSection = {
 // Your education background
 
 const educationInfo = {
-  viewEducation: true, // Set it to true to see education section
+  display: false, // Set it to true to see education section
   schools: [
     {
-      schoolName: "NIT Agartala",
+      schoolName: "National Institute of Technology Agartala",
       logo: require("./assets/images/download.jfif"),
       subHeader: "Bachelor of Technology in Computer Science and Engineering",
       duration: "July 2015 - June 2019",
@@ -154,16 +169,16 @@ const educationInfo = {
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       // ]
     },
-    {
-      schoolName: "Sasi Junior College",
-      logo: require("./assets/images/download1.jfif"),
-      subHeader: "Mathematics Physics and chemistry",
-      duration: "June 2013 - May 2015",
-      desc: "Ranked top 5% in the program with 97.5%.",
-      // descBullets: [
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      // ]
-    }
+    // {
+    //   schoolName: "Sasi Junior College",
+    //   logo: require("./assets/images/download1.jfif"),
+    //   subHeader: "Mathematics Physics and chemistry",
+    //   duration: "June 2013 - May 2015",
+    //   desc: "Ranked top 5% in the program with 97.5%.",
+    //   // descBullets: [
+    //   //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    //   // ]
+    // }
   ]
 }
 
@@ -191,16 +206,14 @@ const techStack = {
 // Your top 3 work experiences
 
 const workExperiences = {
-  viewExperiences: true, //Set it to true to show workExperiences Section
+  display: true, //Set it to true to show workExperiences Section
   experience: [
-
-
     {
       role: "Front-End Developer",
       company: "PiXL Tech LTD",
       companylogo: pixlLogo,
       date: "March 2023 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: ""
     },
     {
       role: "Software Engineer II",
@@ -217,7 +230,7 @@ const workExperiences = {
     {
       role: "Senior Software Engineer",
       company: "Wipro Technologies",
-      companylogo: require("./assets/images/wipro.png"),
+      companylogo: wiproLogo,
       date: "July 2019 – Feb 2022",
       desc: "As a Full-stack [Automation] developer, I design, create, test, and deploy effective test automation solutions. My primary focus is to build cloud-based automation solutions.",
       descBullets: [
@@ -227,13 +240,6 @@ const workExperiences = {
         "Technology Stack:–  FrontEnd: Angular, Material, and Nebular – BackEnd: .Net Web API – Database: SQL Server(on-prem), Azure SQL server"
       ]
     },
-    // {
-    //   role: "Software Engineer Intern",
-    //   company: "Airbnb",
-    //   companylogo: require("./assets/images/airbnbLogo.png"),
-    //   date: "Jan 2015 – Sep 2015",
-    //   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    // },
   ]
 };
 
@@ -253,52 +259,51 @@ const bigProjects = {
   title: "Big Projects",
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
-    // {
-    //   image: require("./assets/images/saayaHealthLogo.webp"),
-    //   link: "http://saayahealth.com/"
-    // },
-    // {
-    //   image: require("./assets/images/nextuLogo.webp"),
-    //   link: "http://nextu.se/"
-    // }
+    {
+      image: "",
+      link: ""
+    }
   ],
-  display: true
+  display: false
 };
 
 // Your Achievement Section Include Your Certification Talks and More
 
 const achievementSection = {
-
+  display: true,
   title: emoji("Achievements And Certifications 🏆 "),
   subtitle: "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
 
   achievementsCards: [
-    // {
-    //   title: "Google Code-In Finalist",
-    //   subtitle: "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-    //   image: require("./assets/images/codeInLogo.webp"),
-    //   footerLink: [
-    //     { name: "Certification", url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing" },
-    //     { name: "Award Letter", url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing" },
-    //     { name: "Google Code-in Blog", url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html" }
-    //   ]
-    // },
-    // {
-    //   title: "Google Assistant Action",
-    //   subtitle: "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-    //   image: require("./assets/images/googleAssistantLogo.webp"),
-    //   footerLink: [{ name: "View Google Assistant Action", url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en" }]
-    // },
+    {
+      title: "Spot Award",
+      subtitle: "I received a spot award for my outstanding performance at FactSet Research Systems.",
+      image: spotAwardLogo,
+      footerLink: []
+    },
+    {
+      title: "High Learning Agility Award",
+      subtitle: "I was awarded a high learning agility ward for my rapid learning and implementation at Wipro Technologies.",
+      image: wiproLogo,
+      footerLink: []
+    },
+    {
+      title: "Front End Development Libraries",
+      image: fccLogo,
+      image_dark: factsetLogo,
+      footerLink: [{ name: "Certification", url: "https://freecodecamp.org/certification/sravanthbaratam/front-end-development-libraries" },]
+    },
+    {
+      title: "JavaScript Algorithms and Data Structures",
+      image: fccLogo,
+      footerLink: [{ name: "Certification", url: "https://freecodecamp.org/certification/sravanthbaratam/javascript-algorithms-and-data-structures" },]
+    },
+    {
+      title: "Microsoft Certified: Azure Fundamentals",
+      image: azureFundamentalsLogo,
+      footerLink: [{ name: "Certification", url: "https://www.credly.com/badges/201c03e2-6c34-4a81-ad92-2fb47a56d24d/public_url" },]
+    },
 
-    // {
-    //   title: "PWA Web App Developer",
-    //   subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-    //   image: require("./assets/images/pwaLogo.webp"),
-    //   footerLink: [
-    //     { name: "Certification", url: "" },
-    //     { name: "Final Project", url: "https://pakistan-olx-1.firebaseapp.com/" }
-    //   ]
-    // }
   ]
 };
 
@@ -322,6 +327,7 @@ const blogSection = {
 // Talks Sections
 
 const talkSection = {
+  display: false,
   title: "TALKS",
   subtitle: emoji("I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"),
 
@@ -338,6 +344,7 @@ const talkSection = {
 // Podcast Section
 
 const podcastSection = {
+  display: false,
   title: emoji("Podcast 🎙️"),
   subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
 
@@ -350,7 +357,7 @@ const podcastSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle: "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+91-9010155001",
+  number: "+44 7767990143",
   email_address: "sravanthbaratam@gmail.com"
 };
 
@@ -360,4 +367,4 @@ const twitterDetails = {
 
   userName: "sravanthbaratam"
 };
-export { greeting, socialMediaLinks, skillsSection, educationInfo, techStack, workExperiences, openSource, bigProjects, achievementSection, blogSection, talkSection, podcastSection, contactInfo, twitterDetails };
+export { splashScreen, greeting, socialMediaLinks, skillsSection, educationInfo, techStack, workExperiences, openSource, bigProjects, achievementSection, blogSection, talkSection, podcastSection, contactInfo, twitterDetails };
