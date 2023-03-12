@@ -24,6 +24,7 @@ import wiproLogo from './assets/images/Wipro_Primary_Logo_Color_RGB.svg'
 import fccLogo from './assets/images/fcc_primary_large.svg'
 import spotAwardLogo from './assets/images/factset-spot-award.png'
 import azureFundamentalsLogo from './assets/images/azure_fundamentals.png'
+import iiitLogo from './assets/images/iiit-new.png'
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 // Splash Screen
 
@@ -38,8 +39,8 @@ const greeting = {
   /* Your Summary And Greeting Section */
   username: "Sravanth Baratam",
   title: "Hi there, I'm Sravanth",
-  subTitle: emoji("A passionate Software Developer 🚀 having an experience of building Full Stack Web Applications with React / FastAPI and some other cool libraries and frameworks."),
-  resumeLink: "https://drive.google.com/file/d/1ivXNWjz9lZiEBKmarZL67wkmSJt5wwKy/view?usp=sharing"
+  subTitle: emoji("A passionate Software Developer 🚀 having an experience of building Full Stack Web Applications with React / NodeJs and some other cool libraries and frameworks."),
+  resumeLink: "https://drive.google.com/file/d/1UE01eW_2aUJ_GqO1l4RRxztgVFF1he5u/view?usp=sharing"
 };
 
 // Your Social Media Link
@@ -209,37 +210,57 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Front-End Developer",
+      role: "Senior Software Engineer",
       company: "PiXL Tech LTD",
       companylogo: pixlLogo,
       date: "March 2023 – Present",
-      desc: ""
+      // desc: "",
+      // descBullets: [
+      //   "Developing Single Page Applications for PiXL Tech using React, Nodejs, and AWS.",
+      //   "Collaborated across teams and take ownership of supporting the internal engineering needs of the team.",
+      //   "Maintained clean and clear documentation of changes in the existing app and also the addition of new features or pages.",
+      //   "Converting the designs from Figma to the exact web page as per the design standards.",
+      //   "Used jest and Cypress to write effective unit and end-to-end tests."
+      // ]
     },
     {
       role: "Software Engineer II",
-      company: "FactSet Research Systems Inc",
+      company: "FactSet LTD",
       companylogo: factsetLogo,
       date: "March 2022 – Jan 2023",
-      desc: "As a Full-stack developer, I design, create, test, and deploy effective solutions.",
-      descBullets: [
-        "Used both SCRUM (Agile) for Project management",
-        "Coordinate with management and support teams to deliver stable enterprise software products.",
-        "Technology Stack:–  FrontEnd: Vue, BootStrap – BackEnd: Python, FAST API – Cloud: Heroku, AWS"
-      ]
+      // desc: "As a Full-stack developer, I design, create, test, and deploy effective solutions.",
+      // descBullets: [
+      //   "Developed various SPA’s for Research and Advisory SBU in private markets space using React, FastAPI, and Azure.",
+      //   "Followed coding standards(PEP8, etc). Done Code Reviews. Maintained >90% unit test coverage, <1% code duplication, and 0% code smells in SonarQube scans.",
+      //   "Used Redis for distributed cache to improve the performance of the APIs. Used handlebars template engine to enable pdf/excel download of individual/global download of the report which contains tabular and chart data.",
+      //   "Participated in the internal company-wide hackathon. Created a web app as a flexible way to categorize companies leveraging tags extracted from selected company webpages by using NLP.",
+      //   "Used different logging tools lightstep, sentry, and pendo to effectively log the performance and errors.",
+      //   "Participated in on-call shifts and helped clients to resolve their issues by debugging using the logging tools.",
+      //   "Always maintained the performance and rarely had an SLT breach which will be due to the infra outage rather than the performance of the app."
+      // ]
     },
     {
       role: "Senior Software Engineer",
-      company: "Wipro Technologies",
+      company: "Wipro Limited",
       companylogo: wiproLogo,
-      date: "July 2019 – Feb 2022",
-      desc: "As a Full-stack [Automation] developer, I design, create, test, and deploy effective test automation solutions. My primary focus is to build cloud-based automation solutions.",
-      descBullets: [
-        "Used both SCRUM (Agile) and Waterfall methodologies for Project management",
-        "Coordinate with management and support teams to deliver stable enterprise software products.",
-        "Currently, building a test automation solution for Microsoft.",
-        "Technology Stack:–  FrontEnd: Angular, Material, and Nebular – BackEnd: .Net Web API – Database: SQL Server(on-prem), Azure SQL server"
-      ]
+      date: "July 2018 – Feb 2022",
+      // desc: "As a Full-stack [Automation] developer, I design, create, test, and deploy effective test automation solutions. My primary focus is to build cloud-based automation solutions.",
+      // descBullets: [
+      //   "My primary focus is designing, creating, testing, and deploying effective cloud-based automation solutions. Coordinate with management and support teams to deliver stable enterprise software products.",
+      //   "Developed various automation tools(Full stack Web Apps) for Microsoft’s OS Compatability team to ease the manual and automated compatibility testing.",
+      //   "Designed and developed a SPA to manage the automation like assigning tasks, triggering the setup of VM(virtual machine), and saving hours of manual effort daily by the tester to just set up the VM based on his task of the day.",
+      //   "Created services to get the sprint-wise stats of the automation runs and suggestions based on the telemetry data. Consuming these services to populate the data in the UI provided various options to sort, filter, and see the graphs based on the selection eases the analysts to analyze the scope of improvement and give suggestions to the QA team.",
+      //   "Used msal.js to authenticate and authorize the users based on their role (User/Contributor) to various app features/pages.",
+      //   "Created automation tools for Microsoft's Agreement Center to simplify the validation of agreements based on location or region, language, or clauses. The tools automated manual processes such as generating validation reports by analyzing specific sections of the relevant documents.",
+      //   "Created a SPA from scratch using ReactJs, and FluentUI to trigger the automation, view results, and compare with previous results with complex UI components like expandable tables, sorting, pagination, modal, etc…"
+      // ]
     },
+    {
+      role: "Research Intern",
+      company: "IIIT Hyderabad",
+      companylogo: iiitLogo,
+      date: "May 2018 – June 2018",
+    }
   ]
 };
 
@@ -291,6 +312,11 @@ const achievementSection = {
       footerLink: []
     },
     {
+      title: "Microsoft Certified: Azure Fundamentals",
+      image: azureFundamentalsLogo,
+      footerLink: [{ name: "Certification", url: "https://www.credly.com/badges/201c03e2-6c34-4a81-ad92-2fb47a56d24d/public_url" },]
+    },
+    {
       title: "Front End Development Libraries",
       image: fccLogo,
       image_dark: factsetLogo,
@@ -301,12 +327,6 @@ const achievementSection = {
       image: fccLogo,
       footerLink: [{ name: "Certification", url: "https://freecodecamp.org/certification/sravanthbaratam/javascript-algorithms-and-data-structures" },]
     },
-    {
-      title: "Microsoft Certified: Azure Fundamentals",
-      image: azureFundamentalsLogo,
-      footerLink: [{ name: "Certification", url: "https://www.credly.com/badges/201c03e2-6c34-4a81-ad92-2fb47a56d24d/public_url" },]
-    },
-
   ]
 };
 
