@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/developerFolio/static/css/main.becd5cdc.css",
-    "main.js": "/developerFolio/static/js/main.696b4481.js",
+    "main.js": "/developerFolio/static/js/main.69c667ab.js",
     "static/css/80.acf07001.chunk.css": "/developerFolio/static/css/80.acf07001.chunk.css",
     "static/js/80.f4be1af5.chunk.js": "/developerFolio/static/js/80.f4be1af5.chunk.js",
     "static/css/934.4762cd7f.chunk.css": "/developerFolio/static/css/934.4762cd7f.chunk.css",
@@ -60,7 +60,7 @@
     "static/media/repoStar.svg": "/developerFolio/static/media/repoStar.a9e4fdd5120f04f41d3778e24941e345.svg",
     "static/media/fastapi.svg": "/developerFolio/static/media/fastapi.b342b1c57fecaf0ae1778beb71396c17.svg",
     "main.becd5cdc.css.map": "/developerFolio/static/css/main.becd5cdc.css.map",
-    "main.696b4481.js.map": "/developerFolio/static/js/main.696b4481.js.map",
+    "main.69c667ab.js.map": "/developerFolio/static/js/main.69c667ab.js.map",
     "80.acf07001.chunk.css.map": "/developerFolio/static/css/80.acf07001.chunk.css.map",
     "80.f4be1af5.chunk.js.map": "/developerFolio/static/js/80.f4be1af5.chunk.js.map",
     "934.4762cd7f.chunk.css.map": "/developerFolio/static/css/934.4762cd7f.chunk.css.map",
@@ -68,6 +68,6 @@
   },
   "entrypoints": [
     "static/css/main.becd5cdc.css",
-    "static/js/main.696b4481.js"
+    "static/js/main.69c667ab.js"
   ]
 }
