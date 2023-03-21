@@ -5,18 +5,9 @@ import { socialMediaLinks } from "../../portfolio";
 export default function socialMedia() {
   return (
     <div className="social-media-div">
-
-      {socialMediaLinks.github ?
-        (<a href={socialMediaLinks.github} className="icon-button github" target="_blank" rel="noreferrer">
-          <i className="fab fa-github"></i>
-          <span></span>
-        </a>)
-        :
-        null}
-
-      {socialMediaLinks.linkedin ?
-        <a href={socialMediaLinks.linkedin} className="icon-button linkedin" target="_blank" rel="noreferrer">
-          <i className="fab fa-linkedin-in"></i>
+      {socialMediaLinks.phone ?
+        <a href={"tel:" + socialMediaLinks.phone} className="icon-button twitter" target="_blank" rel="noreferrer">
+          <i className="fa-solid fa-phone"></i>
           <span></span>
         </a>
         :
@@ -29,13 +20,23 @@ export default function socialMedia() {
         </a>
         :
         null}
-      {socialMediaLinks.phone ?
-        <a href={"tel:" + socialMediaLinks.phone} className="icon-button twitter" target="_blank" rel="noreferrer">
-          <i className="fa-solid fa-phone"></i>
+
+      {socialMediaLinks.linkedin ?
+        <a href={socialMediaLinks.linkedin} className="icon-button linkedin" target="_blank" rel="noreferrer">
+          <i className="fab fa-linkedin-in"></i>
           <span></span>
         </a>
         :
         null}
+
+      {socialMediaLinks.github ?
+        (<a href={socialMediaLinks.github} className="icon-button github" target="_blank" rel="noreferrer">
+          <i className="fab fa-github"></i>
+          <span></span>
+        </a>)
+        :
+        null}
+
       {socialMediaLinks.gitlab ?
         <a href={socialMediaLinks.gitlab} className="icon-button gitlab" target="_blank" rel="noreferrer">
           <i className="fab fa-gitlab"></i>
