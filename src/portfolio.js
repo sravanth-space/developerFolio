@@ -17,7 +17,7 @@ import htmlLogo from './assets/images/html-icon.svg'
 import cssLogo from './assets/images/css-icon.svg'
 import firebaseLogo from './assets/images/google-firebase-icon.svg'
 import azureLogo from './assets/images/azure-icon.svg'
-// import awsLogo from './assets/images/aws-icon.svg'
+import awsLogo from './assets/images/aws-icon.svg'
 import fastAPILogo from './assets/images/fastapi.svg'
 import pixlLogo from './assets/images/pixl_logo.svg'
 import wiproLogo from './assets/images/Wipro_Primary_Logo_Color_RGB.svg'
@@ -25,6 +25,7 @@ import fccLogo from './assets/images/fcc_primary_large.svg'
 import spotAwardLogo from './assets/images/factset-spot-award.png'
 import azureFundamentalsLogo from './assets/images/azure_fundamentals.png'
 import iiitLogo from './assets/images/iiit-new.png'
+import nodeLogo from './assets/images/node.svg'
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 // Splash Screen
 
@@ -127,6 +128,10 @@ const skillsSection = {
       skillName: "fastAPI",
       logo: fastAPILogo
     },
+    {
+      skillName: "NodeJs",
+      logo: nodeLogo
+    },
     // {
     //   skillName: "angular",
     //   fontAwesomeClassname: "fab fa-angular"
@@ -139,18 +144,18 @@ const skillsSection = {
       skillName: "azure",
       logo: azureLogo
     },
-    // {
-    //   skillName: "aws",
-    //   logo: awsLogo
-    // },
+    {
+      skillName: "aws",
+      logo: awsLogo
+    },
     {
       skillName: "firebase",
       logo: firebaseLogo
     },
-    // {
-    //   skillName: "docker",
-    //   fontAwesomeClassname: "fab fa-docker"
-    // },
+    {
+      skillName: "docker",
+      fontAwesomeClassname: "fab fa-docker"
+    },
   ]
 };
 
