@@ -8,6 +8,7 @@ const GITHUB_TOKEN = process.env.REACT_APP_GITHUB_TOKEN;
 const GITHUB_USERNAME = process.env.USERNAME_GITHUB;
 const USE_GITHUB_DATA = process.env.USE_GITHUB_DATA;
 const MEDIUM_USERNAME = process.env.MEDIUM_USERNAME;
+const HASHNODE_USERNAME = process.env.HASHNODE_USERNAME;
 
 const ERR = {
     noUserName:
@@ -15,7 +16,9 @@ const ERR = {
     requestFailed:
         "The request to GitHub didn't succeed. Check if GitHub token in your .env file is correct.",
     requestFailedMedium:
-        "The request to Medium didn't succeed. Check if Medium username in your .env file is correct."
+        "The request to Medium didn't succeed. Check if Medium username in your .env file is correct.",
+    requestFailedHashnode:
+        "The request to Hashnode didn't succeed. Check if Hashnode username in your .env file is correct."
 };
 if (USE_GITHUB_DATA === "true") {
     if (GITHUB_USERNAME === undefined) {
@@ -129,6 +132,41 @@ if (MEDIUM_USERNAME !== undefined) {
             fs.writeFile("./src/data/blogs.json", mediumData, function (err) {
                 if (err) return console.log(err);
                 console.log("saved file to src/data/blogs.json");
+            });
+        });
+    });
+
+    req.on("error", error => {
+        throw error;
+    });
+
+    req.end();
+}
+
+if (HASHNODE_USERNAME !== undefined) {
+    console.log(`Fetching Hashnoed blogs data for ${HASHNODE_USERNAME}`);
+    const options = {
+        hostname: "api.rss2json.com",
+        path: `/v1/api.json?rss_url=https://blogs.sravanth.co.uk/rss.xml`,
+        port: 443,
+        method: "GET"
+    };
+
+    const req = https.request(options, res => {
+        let hashnodeData = "";
+
+        console.log(`statusCode: ${res.statusCode}`);
+        if (res.statusCode !== 200) {
+            throw new Error(ERR.requestMediumFailed);
+        }
+
+        res.on("data", d => {
+            hashnodeData += d;
+        });
+        res.on("end", () => {
+            fs.writeFile("./src/data/hash-blogs.json", hashnodeData, function (err) {
+                if (err) return console.log(err);
+                console.log("saved file to src/data/hash-blogs.json");
             });
         });
     });

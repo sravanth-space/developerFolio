@@ -5,9 +5,12 @@ import { blogSection } from "../../portfolio";
 import { Fade } from "react-awesome-reveal";
 import StyleContext from "../../contexts/StyleContext";
 import blogsData from "../../data/blogs.json";
+import hashnodeData from "../../data/hash-blogs.json";
+
 export default function Blogs() {
   const { isDark } = useContext(StyleContext);
-  const [mediumBlogs, setMediumBlogs] = useState(blogsData.items);
+  const [mediumHashnodeBlogs, _] = useState([...blogsData.items, ...hashnodeData.items]);
+
   //Medium API returns blogs' content in HTML format. Below function extracts blogs' text content within paragraph tags
   function extractTextContent(html) {
     return typeof html === "string"
@@ -36,8 +39,8 @@ export default function Blogs() {
         </div>
         <div className="blog-main-div">
           <div className="blog-text-div">
-            {blogSection.displayMediumBlogs !== true ||
-              mediumBlogs === "Error"
+            {blogSection.displayMediumHashnodeBlogs !== true ||
+              mediumHashnodeBlogs === "Error"
               ? blogSection.blogs.map((blog, i) => {
                 return (
                   <BlogCard
@@ -52,7 +55,7 @@ export default function Blogs() {
                   />
                 );
               })
-              : mediumBlogs.map((blog, i) => {
+              : mediumHashnodeBlogs.map((blog, i) => {
                 return (
                   <BlogCard
                     key={i}

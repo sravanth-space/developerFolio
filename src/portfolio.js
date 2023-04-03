@@ -339,7 +339,7 @@ const achievementSection = {
 
 const blogSection = {
   display: true,
-  displayMediumBlogs: true,
+  displayMediumHashnodeBlogs: true,
   title: "Blogs",
   subtitle: "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
 
