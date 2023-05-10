@@ -54,7 +54,7 @@ const socialMediaLinks = {
   // gitlab: "",
   facebook: "",
   medium: "https://sravanth299.medium.com/",
-  stackoverflow: "https://stackoverflow.com/users/12789289/sravanth-baratam",
+  stackoverflow: "",
   instagram: "",
   twitter: "",
   phone: "+44 7871175422"
