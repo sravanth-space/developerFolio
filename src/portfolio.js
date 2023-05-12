@@ -67,9 +67,9 @@ const skillsSection = {
   title: "What i do",
   subTitle: "FULL STACK WEB DEVELOPMENT",
   skills: [
-    emoji("⚡ Develop highly interactive Front end / User Interfaces for your web applications"),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji("⚡ Integration of third party services such as Azure SQL/etc")
+    //   emoji("⚡ Develop highly interactive Front end / User Interfaces for your web applications"),
+    //   emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    //   emoji("⚡ Integration of third party services such as Azure SQL/etc")
   ],
 
   /* Make Sure You include correct Font Awesome Classname to view your icon
@@ -104,14 +104,14 @@ const skillsSection = {
       skillName: "Redux[Toolkit]",
       logo: reduxLogo
     },
-    // {
-    //   skillName: "Csharp",
-    //   fontAwesomeClassname: "fab fa-windows"
-    // },
-    // {
-    //   skillName: ".Net Web API",
-    //   fontAwesomeClassname: "fab fa-windows"
-    // },
+    {
+      skillName: "Csharp",
+      fontAwesomeClassname: "fab fa-windows"
+    },
+    {
+      skillName: ".Net Web API",
+      fontAwesomeClassname: "fab fa-windows"
+    },
     {
       skillName: "Jest",
       logo: jestLogo
@@ -132,10 +132,10 @@ const skillsSection = {
       skillName: "NodeJs",
       logo: nodeLogo
     },
-    // {
-    //   skillName: "angular",
-    //   fontAwesomeClassname: "fab fa-angular"
-    // },
+    {
+      skillName: "angular",
+      fontAwesomeClassname: "fab fa-angular"
+    },
     {
       skillName: "sql-database",
       logo: sqlLogo
@@ -162,13 +162,13 @@ const skillsSection = {
 // Your education background
 
 const educationInfo = {
-  display: false, // Set it to true to see education section
+  display: true, // Set it to true to see education section
   schools: [
     {
       schoolName: "National Institute of Technology Agartala",
       logo: require("./assets/images/download.jfif"),
       subHeader: "Bachelor of Technology in Computer Science and Engineering",
-      duration: "July 2015 - June 2019",
+      // duration: "July 2015 - May 2019",
       desc: "Ranked top 10% in the program with CGPA: 8.1. Took courses about Software Engineering, Design and Analysis of algorithms, Operating Systems, ...",
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
