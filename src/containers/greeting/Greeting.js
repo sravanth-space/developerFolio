@@ -6,10 +6,17 @@ import { greeting } from "../../portfolio";
 import { Fade } from "react-awesome-reveal";
 import emoji from "react-easy-emoji";
 import StyleContext from "../../contexts/StyleContext";
-import manOnTable from '../../assets/images/manOnTable.svg'
+// import manOnTable from '../../assets/images/manOnTable.svg'
+import Lottie from "react-lottie";
+import helloAnimation from "../../assets/lottie/hello.json";
 
 export default function Greeting() {
   const { isDark } = useContext(StyleContext);
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: helloAnimation
+  };
   return (
     <Fade bottom duration={1000} distance="40px">
       <div className="greet-main" id="greeting">
@@ -44,10 +51,11 @@ export default function Greeting() {
             </div>
           </div>
           <div className="greeting-image-div">
-            <img
+            {/* <img
               alt="sravanth sitting on table"
               src={manOnTable}
-            ></img>
+            ></img> */}
+            <Lottie options={defaultOptions} isClickToPauseDisabled={true} />
           </div>
         </div>
       </div>

@@ -4,18 +4,27 @@ import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import { skillsSection } from "../../portfolio";
 import { Fade } from "react-awesome-reveal";
 import StyleContext from "../../contexts/StyleContext";
-import developerActivity from '../../assets/images/developerActivity.svg'
+// import developerActivity from '../../assets/images/developerActivity.svg'
+import proAnimation from '../../assets/lottie/programming.json';
+import Lottie from "react-lottie";
+
 export default function Skills() {
   const { isDark } = useContext(StyleContext);
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: proAnimation
+  };
   return (
     <div className={isDark ? "dark-mode main" : "main"} id="skills">
       <div className="skills-main-div">
         <Fade left duration={1000}>
           <div className="skills-image-div">
-            <img
+            {/* <img
               alt="sravanth Working"
               src={developerActivity}
-            ></img>
+            ></img> */}
+            <Lottie options={defaultOptions} isClickToPauseDisabled={true} />
           </div>
         </Fade>
         <Fade right duration={1000}>
