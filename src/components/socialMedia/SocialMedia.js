@@ -71,7 +71,7 @@ export default function socialMedia() {
 
       {socialMediaLinks.medium ?
         (<a href={socialMediaLinks.medium} className="icon-button medium" target="_blank" rel="noreferrer">
-          <i className="fab fa-medium"></i>
+          <i className="fab fa-medium" title="Medium"></i>
           <span></span>
         </a>)
         :
@@ -79,12 +79,20 @@ export default function socialMedia() {
 
       {socialMediaLinks.stackoverflow ?
         (<a href={socialMediaLinks.stackoverflow} className="icon-button stack-overflow" target="_blank" rel="noreferrer">
-          <i className="fab fa-stack-overflow"></i>
+          <i className="fab fa-stack-overflow" title="Stackoverflow"></i>
           <span></span>
         </a>)
         :
         null}
+      {socialMediaLinks.skype ?
+        (<a href={socialMediaLinks.skype} className="icon-button skype" target="_blank" rel="noreferrer">
+          <i className="fa-brands fa-skype" style={{ color: "#099ade" }} title="Skype"></i>
+          <span></span>
+        </a>)
+        :
+        null
+      }
 
-    </div>
+    </div >
   );
 }

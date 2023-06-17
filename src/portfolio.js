@@ -51,13 +51,14 @@ const socialMediaLinks = {
   github: "https://github.com/sravanth299",
   linkedin: "",
   gmail: "sravk299@gmail.com",
-  // gitlab: "",
+  gitlab: "",
   facebook: "",
   medium: "https://sravanth299.medium.com/",
   stackoverflow: "",
   instagram: "",
-  twitter: "",
-  phone: "+44 7871175422"
+  twitter: "https://twitter.com/sravanth299",
+  phone: "+44 7871175422",
+  skype: "https://join.skype.com/invite/NJjGL1IcwhhP"
 };
 
 // Your Skills Section

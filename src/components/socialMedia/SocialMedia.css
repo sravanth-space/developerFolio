@@ -71,7 +71,8 @@
 .facebook i:hover,
 .instagram i:hover,
 .stack-overflow i:hover,
-.medium i:hover{
+.medium i:hover,
+.skype i:hover {
   background-color: black;
 }
 
