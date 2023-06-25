@@ -220,7 +220,7 @@ const workExperiences = {
       role: "Full Stack Developer",
       company: "FactSet LTD",
       companylogo: factsetLogo,
-      date: "March 2022 – May 2023",
+      // date: "March 2022 – May 2023",
       // desc: "As a Full-stack developer, I design, create, test, and deploy effective solutions.",
       // descBullets: [
       //   "Developed various SPA’s for Research and Advisory SBU in private markets space using React, FastAPI, and Azure.",
@@ -236,7 +236,7 @@ const workExperiences = {
       role: "Senior Software Engineer",
       company: "Wipro Limited",
       companylogo: wiproLogo,
-      date: "July 2018 – Feb 2022",
+      // date: "July 2018 – Feb 2022",
       // desc: "As a Full-stack [Automation] developer, I design, create, test, and deploy effective test automation solutions. My primary focus is to build cloud-based automation solutions.",
       // descBullets: [
       //   "My primary focus is designing, creating, testing, and deploying effective cloud-based automation solutions. Coordinate with management and support teams to deliver stable enterprise software products.",
@@ -252,7 +252,7 @@ const workExperiences = {
       role: "Research Intern",
       company: "IIIT Hyderabad",
       companylogo: iiitLogo,
-      date: "May 2018 – June 2018",
+      // date: "May 2018 – June 2018",
     }
   ]
 };
