@@ -19,7 +19,7 @@ import firebaseLogo from './assets/images/google-firebase-icon.svg'
 import azureLogo from './assets/images/azure-icon.svg'
 import awsLogo from './assets/images/aws-icon.svg'
 import fastAPILogo from './assets/images/fastapi.svg'
-import pixlLogo from './assets/images/pixl_logo.svg'
+// import pixlLogo from './assets/images/pixl_logo.svg'
 import wiproLogo from './assets/images/Wipro_Primary_Logo_Color_RGB.svg'
 import fccLogo from './assets/images/fcc_primary_large.svg'
 import spotAwardLogo from './assets/images/factset-spot-award.png'
@@ -58,7 +58,8 @@ const socialMediaLinks = {
   instagram: "",
   twitter: "https://twitter.com/sravanth299",
   phone: "+44 7871175422",
-  skype: "https://join.skype.com/invite/NJjGL1IcwhhP"
+  skype: "https://join.skype.com/invite/NJjGL1IcwhhP",
+  upwork: "https://www.upwork.com/freelancers/sravanth"
 };
 
 // Your Skills Section

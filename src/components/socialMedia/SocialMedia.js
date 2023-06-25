@@ -1,6 +1,7 @@
 import React from "react";
 import "./SocialMedia.css";
 import { socialMediaLinks } from "../../portfolio";
+import upwork from "../../assets/images/upwork.svg";
 
 export default function socialMedia() {
   return (
@@ -84,6 +85,15 @@ export default function socialMedia() {
         </a>)
         :
         null}
+
+      {socialMediaLinks.upwork ?
+        (<a href={socialMediaLinks.skype} className="icon-button upwork" target="_blank" rel="noreferrer">
+          <img src={upwork} alt="Upwork" className="card-image" style={{ "width": "20px" }}></img>
+        </a>)
+        :
+        null
+      }
+
       {socialMediaLinks.skype ?
         (<a href={socialMediaLinks.skype} className="icon-button skype" target="_blank" rel="noreferrer">
           <i className="fa-brands fa-skype" style={{ color: "#099ade" }} title="Skype"></i>
@@ -92,6 +102,7 @@ export default function socialMedia() {
         :
         null
       }
+
 
     </div >
   );
