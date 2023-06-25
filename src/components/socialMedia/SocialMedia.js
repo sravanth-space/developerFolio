@@ -87,7 +87,7 @@ export default function socialMedia() {
         null}
 
       {socialMediaLinks.upwork ?
-        (<a href={socialMediaLinks.skype} className="icon-button upwork" target="_blank" rel="noreferrer">
+        (<a href={socialMediaLinks.upwork} className="icon-button upwork" target="_blank" rel="noreferrer">
           <img src={upwork} alt="Upwork" className="card-image" style={{ "width": "20px" }}></img>
         </a>)
         :
