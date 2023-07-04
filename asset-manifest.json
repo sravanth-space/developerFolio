@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.f7f07cb6.css",
-    "main.js": "/static/js/main.8d57f85a.js",
-    "static/css/80.acf07001.chunk.css": "/static/css/80.acf07001.chunk.css",
-    "static/js/80.e2affed9.chunk.js": "/static/js/80.e2affed9.chunk.js",
-    "static/css/934.4762cd7f.chunk.css": "/static/css/934.4762cd7f.chunk.css",
-    "static/js/934.d3243916.chunk.js": "/static/js/934.d3243916.chunk.js",
+    "main.css": "/static/css/main.b2ef1b7c.css",
+    "main.js": "/static/js/main.237445aa.js",
+    "static/css/625.bcb0f2d7.chunk.css": "/static/css/625.bcb0f2d7.chunk.css",
+    "static/js/625.d083108b.chunk.js": "/static/js/625.d083108b.chunk.js",
+    "static/css/521.ee8b28da.chunk.css": "/static/css/521.ee8b28da.chunk.css",
+    "static/js/521.c64b785d.chunk.js": "/static/js/521.c64b785d.chunk.js",
     "static/media/stanfordLogo.png": "/static/media/stanfordLogo.5a8e3a0a00949c93a9b8.png",
     "static/media/harvardLogo.png": "/static/media/harvardLogo.0038dd288d80ae8432af.png",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
@@ -52,24 +52,24 @@
     "static/media/upwork.svg": "/static/media/upwork.6eaee7dd50e5d98d10e513a76b4c98ca.svg",
     "static/media/javascriptLogo.svg": "/static/media/javascriptLogo.cc9251b7b69a7da77d451f1d9720ea74.svg",
     "static/media/html-icon.svg": "/static/media/html-icon.e452dcbf9f0349fd611dbd0bd91a169a.svg",
-    "static/media/locationLogo.svg": "/static/media/locationLogo.862e2b2313a519e24d055d65480c8eda.svg",
+    "static/media/locationLogo.svg": "/static/media/locationLogo.862e2b2313a519e24d05.svg",
     "static/media/googleAssistant.svg": "/static/media/googleAssistant.3227e84a89a1650db619.svg",
     "static/media/azure-icon.svg": "/static/media/azure-icon.2b83c7a3440214503ce4d3ed2a406aec.svg",
-    "static/media/repoFork.svg": "/static/media/repoFork.af895f4bf7d8d5eab2f312da8be429b2.svg",
+    "static/media/repoStar.svg": "/static/media/repoStar.da7d0bb76dc226a1f88d50f17ed92f7d.svg",
     "static/media/talksCardBackAlt.svg": "/static/media/talksCardBackAlt.3919b921ef467527e918.svg",
+    "static/media/repo.svg": "/static/media/repo.ff86ae8e33e864e44c7a27a10439e18d.svg",
+    "static/media/repoFork.svg": "/static/media/repoFork.a18cd92105fc9b4287472219db96eff0.svg",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "static/media/repo.svg": "/static/media/repo.1fa96c3cf870c8305e05974632969640.svg",
-    "static/media/repoStar.svg": "/static/media/repoStar.a9e4fdd5120f04f41d3778e24941e345.svg",
     "static/media/fastapi.svg": "/static/media/fastapi.b342b1c57fecaf0ae1778beb71396c17.svg",
-    "main.f7f07cb6.css.map": "/static/css/main.f7f07cb6.css.map",
-    "main.8d57f85a.js.map": "/static/js/main.8d57f85a.js.map",
-    "80.acf07001.chunk.css.map": "/static/css/80.acf07001.chunk.css.map",
-    "80.e2affed9.chunk.js.map": "/static/js/80.e2affed9.chunk.js.map",
-    "934.4762cd7f.chunk.css.map": "/static/css/934.4762cd7f.chunk.css.map",
-    "934.d3243916.chunk.js.map": "/static/js/934.d3243916.chunk.js.map"
+    "main.b2ef1b7c.css.map": "/static/css/main.b2ef1b7c.css.map",
+    "main.237445aa.js.map": "/static/js/main.237445aa.js.map",
+    "625.bcb0f2d7.chunk.css.map": "/static/css/625.bcb0f2d7.chunk.css.map",
+    "625.d083108b.chunk.js.map": "/static/js/625.d083108b.chunk.js.map",
+    "521.ee8b28da.chunk.css.map": "/static/css/521.ee8b28da.chunk.css.map",
+    "521.c64b785d.chunk.js.map": "/static/js/521.c64b785d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f7f07cb6.css",
-    "static/js/main.8d57f85a.js"
+    "static/css/main.b2ef1b7c.css",
+    "static/js/main.237445aa.js"
   ]
 }
