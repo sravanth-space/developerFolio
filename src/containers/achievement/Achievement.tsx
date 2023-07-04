@@ -1,17 +1,17 @@
-import React, { useContext } from "react";
+import React, {useContext} from "react";
 import "./Achievement.css";
 import AchievementCard from "../../components/achievementCard/AchievementCard";
-import { achievementSection } from "../../portfolio";
-import { Fade } from "react-awesome-reveal";
+import {achievementSection} from "../../portfolio";
+import {Fade} from "react-awesome-reveal";
 import StyleContext from "../../contexts/StyleContext";
 export default function Achievement() {
-  const { isDark } = useContext(StyleContext);
+  const {isDark} = useContext<any>(StyleContext);
   // function openUrlInNewTab(url) {
   //   var win = window.open(url, "_blank");
   //   win.focus();
   // }
   return (
-    <Fade bottom duration={1000} distance="20px">
+    <Fade duration={1000}>
       <div className="main" id="achievements">
         <div className="achievement-main-div">
           <div className="achievement-header">
@@ -35,7 +35,7 @@ export default function Achievement() {
             </p>
           </div>
           <div className="achievement-cards-div">
-            {achievementSection.achievementsCards.map((card) => {
+            {achievementSection.achievementsCards.map(card => {
               return (
                 <AchievementCard
                   key={card.title}
@@ -44,7 +44,7 @@ export default function Achievement() {
                     title: card.title,
                     description: card.subtitle,
                     image: card.image,
-                    footer: card.footerLink,
+                    footer: card.footerLink
                   }}
                 />
               );

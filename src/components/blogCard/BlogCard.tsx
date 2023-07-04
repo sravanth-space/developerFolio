@@ -5,7 +5,7 @@ export default function BlogCard({ blog, isDark }) {
   function openUrlInNewTab(url) {
     if (url !== undefined) {
       var win = window.open(url, "_blank");
-      win.focus();
+      win!.focus();
     }
   }
 

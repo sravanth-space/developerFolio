@@ -1,17 +1,21 @@
 import React from "react";
 import "./GithubRepoCard.css";
-import { Fade } from "react-awesome-reveal";
-import { ReactComponent as RepoLogo } from "./../../assets/images/repo.svg"
-import { ReactComponent as RepoFork } from "./../../assets/images/repoFork.svg"
-import { ReactComponent as RepoStar } from "./../../assets/images/repoStar.svg"
-export default function GithubRepoCard({ repo, isDark }) {
+import {Fade} from "react-awesome-reveal";
+
+export default function GithubRepoCard({
+  repo,
+  isDark,
+  repoLogo,
+  repoFork,
+  repoStar
+}) {
   function openRepoinNewTab(url) {
     var win = window.open(url, "_blank");
-    win.focus();
+    win!.focus();
   }
-
+  // const {repoLogo, repoFork, repoStar} = openSource;
   return (
-    <Fade bottom duration={1000} distance="20px">
+    <Fade duration={1000}>
       <div>
         <div
           className={isDark ? "dark-card-mode repo-card-div" : "repo-card-div"}
@@ -19,7 +23,7 @@ export default function GithubRepoCard({ repo, isDark }) {
           onClick={() => openRepoinNewTab(repo.node.homepageUrl)}
         >
           <div className="repo-name-div">
-            <RepoLogo />
+            <img src={repoLogo} alt={"repoLogo"} />
             <p className="repo-name">{repo.node.name}</p>
           </div>
           <p className="repo-description">{repo.node.description}</p>
@@ -29,17 +33,19 @@ export default function GithubRepoCard({ repo, isDark }) {
                 <span>
                   <div
                     className="language-color"
-                    style={{ backgroundColor: repo.node.primaryLanguage.color }}
+                    style={{backgroundColor: repo.node.primaryLanguage.color}}
                   ></div>
                   <p>{repo.node.primaryLanguage.name}</p>
                 </span>
               )}
               <span>
-                <RepoFork />
+                {/* <RepoFork /> */}
+                <img src={repoFork} alt={"repoFork"} />
                 <p>{repo.node.forkCount}</p>
               </span>
               <span>
-                <RepoStar />
+                {/* <RepoStar /> */}
+                <img src={repoStar} alt={"repoStar"} />
                 <p>{repo.node.stargazers.totalCount}</p>
               </span>
             </div>
@@ -50,7 +56,8 @@ export default function GithubRepoCard({ repo, isDark }) {
           <div className="repo-card-topic">
             {repo.node.repositoryTopics.edges.map((v, i) => {
               return (
-                <span key={i}
+                <span
+                  key={i}
                   className={isDark ? "dark-mode repo-topic" : "repo-topic"}
                 >
                   {v.node.topic.name}

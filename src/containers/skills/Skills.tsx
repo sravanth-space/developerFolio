@@ -1,15 +1,15 @@
-import React, { useContext } from "react";
+import React, {useContext} from "react";
 import "./Skills.css";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
-import { skillsSection } from "../../portfolio";
-import { Fade } from "react-awesome-reveal";
+import {skillsSection} from "../../portfolio";
+import {Fade} from "react-awesome-reveal";
 import StyleContext from "../../contexts/StyleContext";
 // import developerActivity from '../../assets/images/developerActivity.svg'
-import proAnimation from '../../assets/lottie/programming.json';
+import proAnimation from "../../assets/lottie/programming.json";
 import Lottie from "react-lottie";
 
 export default function Skills() {
-  const { isDark } = useContext(StyleContext);
+  const {isDark} = useContext<any>(StyleContext);
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -18,7 +18,7 @@ export default function Skills() {
   return (
     <div className={isDark ? "dark-mode main" : "main"} id="skills">
       <div className="skills-main-div">
-        <Fade left duration={1000}>
+        <Fade direction="left" duration={1000}>
           <div className="skills-image-div">
             {/* <img
               alt="sravanth Working"
@@ -27,7 +27,7 @@ export default function Skills() {
             <Lottie options={defaultOptions} isClickToPauseDisabled={true} />
           </div>
         </Fade>
-        <Fade right duration={1000}>
+        <Fade direction="right" duration={1000}>
           <div className="skills-text-div">
             <h1
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}
@@ -45,7 +45,7 @@ export default function Skills() {
             </p>
             <SoftwareSkill />
             <div>
-              {skillsSection.skills.map((skills) => {
+              {skillsSection.skills.map(skills => {
                 return (
                   <p
                     className={

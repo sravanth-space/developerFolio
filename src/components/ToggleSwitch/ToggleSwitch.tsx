@@ -1,10 +1,10 @@
-import React, { useState, useContext } from "react";
+import React, {useState, useContext} from "react";
 import StyleContext from "../../contexts/StyleContext";
 import "./ToggleSwitch.css";
 import emoji from "react-easy-emoji";
 const ToggleSwitch = () => {
-  const [isChecked, setChecked] = useState(false);
-  const styleContext = useContext(StyleContext);
+  const styleContext = useContext<any>(StyleContext);
+  const [isChecked, setChecked] = useState(styleContext.isDark);
 
   return (
     <label className="switch">

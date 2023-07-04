@@ -2,7 +2,7 @@ import React, {Component, Suspense} from "react";
 import Lottie from "react-lottie";
 import Loading from "../../containers/loading/Loading";
 
-export default class DisplayLottie extends Component {
+export default class DisplayLottie extends Component<{animationData: any}> {
   render() {
     const animationData = this.props.animationData;
     const defaultOptions = {

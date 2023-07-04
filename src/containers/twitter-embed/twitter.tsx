@@ -1,8 +1,8 @@
-import React, { Suspense, useContext } from "react";
+import React, {Suspense, useContext} from "react";
 import "./twitter.css";
 import Loading from "../loading/Loading";
-import { TwitterTimelineEmbed } from "react-twitter-embed";
-import { twitterDetails } from "../../portfolio";
+import {TwitterTimelineEmbed} from "react-twitter-embed";
+import {twitterDetails} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
 const renderLoader = () => <Loading />;
@@ -11,15 +11,16 @@ const cantDisplayError =
 
 function timeOut() {
   setTimeout(function () {
-    if (!document.getElementById("twitter").innerHTML.includes("iframe")) {
-      document.getElementById("twitter").innerHTML = cantDisplayError;
+    const twitterElement = document.getElementById("twitter") as HTMLElement;
+    if (!twitterElement.innerHTML.includes("iframe")) {
+      twitterElement.innerHTML = cantDisplayError;
     }
   }, 10000);
 }
 var widthScreen = window.screen.width;
 
 export default function Twitter() {
-  const { isDark } = useContext(StyleContext);
+  const {isDark} = useContext<any>(StyleContext);
 
   if (twitterDetails.userName) {
     return (
@@ -29,14 +30,14 @@ export default function Twitter() {
             <TwitterTimelineEmbed
               sourceType="profile"
               screenName={twitterDetails.userName}
-              options={{ height: 400, width: { widthScreen } }}
+              options={{height: 400, width: {widthScreen}}}
               placeholder={renderLoader()}
               autoHeight={false}
               borderColor="#fff"
               key={isDark ? "1" : "2"}
               theme={isDark ? "dark" : "light"}
               noFooter={true}
-              onload={timeOut()}
+              onLoad={() => timeOut()}
             />
           </div>
         </div>
