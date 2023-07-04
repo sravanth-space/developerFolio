@@ -1,19 +1,19 @@
-import React, { useState, useContext, Suspense, lazy } from "react";
+import React, {useState, useContext, Suspense, lazy} from "react";
 import "./Project.css";
 import Button from "../../components/button/Button";
-import { openSource, socialMediaLinks } from "../../portfolio";
+import {openSource, socialMediaLinks} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
-import Loading from "../../containers/loading/Loading";
-import profileData from '../../data/profile.json';
+import Loading from "../loading/Loading";
+import profileData from "../../data/profile.json";
 export default function Projects() {
-  const GithubRepoCard = lazy(() =>
-    import("../../components/githubRepoCard/GithubRepoCard")
+  const GithubRepoCard = lazy(
+    () => import("../../components/githubRepoCard/GithubRepoCard")
   );
   const FailedLoading = () => null;
   const renderLoader = () => <Loading />;
   const [repo, setrepo] = useState(profileData.data.user.pinnedItems.edges);
   // todo: remove useContex because is not supported
-  const { isDark } = useContext(StyleContext);
+  const {isDark} = useContext<any>(StyleContext);
 
   if (
     !(typeof repo === "string" || repo instanceof String) &&
@@ -31,7 +31,14 @@ export default function Projects() {
                 );
               }
               return (
-                <GithubRepoCard repo={v} key={v.node.id} isDark={isDark} />
+                <GithubRepoCard
+                  repo={v}
+                  key={v.node.id}
+                  isDark={isDark}
+                  repoLogo={openSource.repoLogo}
+                  repoFork={openSource.repoFork}
+                  repoStar={openSource.repoStar}
+                />
               );
             })}
           </div>

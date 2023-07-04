@@ -1,14 +1,14 @@
-import React, { useContext } from "react";
+import React, {useContext} from "react";
 import "./Contact.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import { contactInfo } from "../../portfolio";
-import { Fade } from "react-awesome-reveal";
+import {contactInfo} from "../../portfolio";
+import {Fade} from "react-awesome-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Contact() {
-  const { isDark } = useContext(StyleContext);
+  const {isDark} = useContext<any>(StyleContext);
   return (
-    <Fade bottom duration={1000} distance="20px">
+    <Fade duration={1000}>
       <div className="main contact-margin-top" id="contact">
         <div className="contact-div-main">
           <div className="contact-header">

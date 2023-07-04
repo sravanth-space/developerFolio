@@ -26,7 +26,10 @@ import spotAwardLogo from './assets/images/factset-spot-award.png'
 import azureFundamentalsLogo from './assets/images/azure_fundamentals.png'
 import iiitLogo from './assets/images/iiit-new.png'
 import nodeLogo from './assets/images/node.svg'
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import repoLogo from "./assets/images/repo.svg";
+import repoFork from "./assets/images/repoFork.svg";
+import repoStar from "./assets/images/repoStar.svg";
+import splashAnimation from "./assets/lottie/splashAnimation.json"; // Rename to your file name for custom animation
 // Splash Screen
 
 const splashScreen = {
@@ -220,6 +223,9 @@ const workExperiences = {
       role: "Full Stack Developer",
       company: "FactSet LTD",
       companylogo: factsetLogo,
+      date: "",
+      desc: "",
+      descBullets: []
       // date: "March 2022 – May 2023",
       // desc: "As a Full-stack developer, I design, create, test, and deploy effective solutions.",
       // descBullets: [
@@ -236,6 +242,9 @@ const workExperiences = {
       role: "Senior Software Engineer",
       company: "Wipro Limited",
       companylogo: wiproLogo,
+      date: "",
+      desc: "",
+      descBullets: []
       // date: "July 2018 – Feb 2022",
       // desc: "As a Full-stack [Automation] developer, I design, create, test, and deploy effective test automation solutions. My primary focus is to build cloud-based automation solutions.",
       // descBullets: [
@@ -252,6 +261,9 @@ const workExperiences = {
       role: "Research Intern",
       company: "IIIT Hyderabad",
       companylogo: iiitLogo,
+      date: "",
+      desc: "",
+      descBullets: []
       // date: "May 2018 – June 2018",
     }
   ]
@@ -263,7 +275,10 @@ To know how to get github key look at readme.md */
 const openSource = {
   githubUserName: "sravanth299", // Change to your github username to view your profile in Contact Section.
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to false,
-  display: true
+  display: true,
+  repoLogo: repoLogo,
+  repoStar: repoStar,
+  repoFork: repoFork
 };
 
 
@@ -335,7 +350,8 @@ const blogSection = {
     {
       url: "",
       title: "",
-      description: ""
+      description: "",
+      image: ""
     },
   ]
 };
@@ -348,12 +364,13 @@ const talkSection = {
   subtitle: emoji("I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"),
 
   talks: [
-    // {
-    //   title: "",
-    //   subtitle: "",
-    //   slides_url: "",
-    //   event_url: ""
-    // }
+    {
+      title: "",
+      subtitle: "",
+      slides_url: "",
+      event_url: "",
+      image: ""
+    }
   ]
 };
 
@@ -366,7 +383,7 @@ const podcastSection = {
 
   // Please Provide with Your Podcast embeded Link
   podcast: [
-    // ""
+    ""
   ]
 };
 

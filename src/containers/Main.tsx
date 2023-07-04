@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState} from "react";
 import Header from "../components/header/Header";
 import Greeting from "./greeting/Greeting";
 import Skills from "./skills/Skills";
@@ -16,8 +16,8 @@ import ScrollToTopButton from "./topbutton/Top";
 import Twitter from "./twitter-embed/twitter";
 import Profile from "./profile/Profile";
 import SplashScreen from "./splashScreen/SplashScreen";
-import { StyleProvider } from "../contexts/StyleContext";
-import { useLocalStorage } from "../hooks/useLocalStorage";
+import {StyleProvider} from "../contexts/StyleContext";
+import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.css";
 import {
   greeting,
@@ -26,7 +26,11 @@ import {
   openSource,
   blogSection,
   talkSection,
-  achievementSection, bigProjects, educationInfo, splashScreen
+  achievementSection,
+  bigProjects,
+  educationInfo,
+  splashScreen,
+  podcastSection
 } from "../portfolio";
 const Main = () => {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
@@ -39,6 +43,7 @@ const Main = () => {
   const viewAchievement = achievementSection.display;
   const viewBlog = blogSection.display;
   const viewTalks = talkSection.display;
+  const viewPodcasts = podcastSection.display;
   const viewStartups = bigProjects.display;
   const viewEducation = educationInfo.display;
   useEffect(() => {
@@ -50,6 +55,8 @@ const Main = () => {
       return () => {
         clearTimeout(splashTimer);
       };
+    } else {
+      return;
     }
   }, []);
 
@@ -58,8 +65,8 @@ const Main = () => {
   };
 
   return (
-    <div className={isDark ? "dark-mode" : null}>
-      <StyleProvider value={{ isDark: isDark, changeTheme: changeTheme }}>
+    <div className={isDark ? "dark-mode" : ""}>
+      <StyleProvider value={{isDark: isDark, changeTheme: changeTheme}}>
         {isShowingSplashAnimation && splashScreen.enabled ? (
           <SplashScreen />
         ) : (
@@ -76,7 +83,7 @@ const Main = () => {
             {viewBlog && <Blogs />}
             {viewTalks && <Talks />}
             <Twitter />
-            {viewTalks && <Podcast />}
+            {viewPodcasts && <Podcast />}
             <Profile />
             <Footer />
             <ScrollToTopButton />
