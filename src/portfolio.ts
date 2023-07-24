@@ -398,6 +398,6 @@ const contactInfo = {
 
 const twitterDetails = {
 
-  userName: ""
+  userName: "sravanth299"
 };
 export { splashScreen, greeting, socialMediaLinks, skillsSection, educationInfo, techStack, workExperiences, openSource, bigProjects, achievementSection, blogSection, talkSection, podcastSection, contactInfo, twitterDetails };
