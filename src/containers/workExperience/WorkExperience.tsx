@@ -10,7 +10,7 @@ export default function WorkExperience() {
 
   return (
     <div id="experience">
-      <Fade direction="up" duration={1000}>
+      <Fade duration={1000}>
         <div className="experience-container" id="workExperience">
           <div>
             <h1 className="experience-heading">Experiences</h1>
