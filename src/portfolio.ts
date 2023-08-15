@@ -3,6 +3,7 @@
 // Your Summary And Greeting Section
 
 import emoji from "react-easy-emoji";
+import muzesLogo from './assets/images/muzesLogo.svg';
 import factsetLogo from './assets/images/factset-logo.svg'
 import reduxLogo from './assets/images/redux-icon.svg'
 import javascriptLogo from './assets/images/javascriptLogo.svg'
@@ -51,16 +52,16 @@ const greeting = {
 
 const socialMediaLinks = {
 
-  github: "https://github.com/sravanth299",
-  linkedin: "",
-  gmail: "sravk299@gmail.com",
+  github: "https://github.com/sravanth-space",
+  linkedin: "https://www.linkedin.com/in/sravanth-baratam/",
+  gmail: "sravanthbaratam@gmail.com",
   gitlab: "",
   facebook: "",
-  medium: "https://sravanth299.medium.com/",
+  medium: "https://sravanth-space.medium.com/",
   stackoverflow: "",
-  instagram: "",
-  twitter: "https://twitter.com/sravanth299",
-  phone: "+44 7871175422",
+  instagram: "https://www.instagram.com/sravanth.space/",
+  twitter: "https://twitter.com/sravanth-space",
+  phone: "+44 7767990143",
   skype: "https://join.skype.com/invite/NJjGL1IcwhhP",
   upwork: "https://www.upwork.com/freelancers/sravanth"
 };
@@ -109,14 +110,7 @@ const skillsSection = {
       skillName: "Redux[Toolkit]",
       logo: reduxLogo
     },
-    {
-      skillName: "Csharp",
-      fontAwesomeClassname: "fab fa-windows"
-    },
-    {
-      skillName: ".Net Web API",
-      fontAwesomeClassname: "fab fa-windows"
-    },
+
     {
       skillName: "Jest",
       logo: jestLogo
@@ -137,10 +131,11 @@ const skillsSection = {
       skillName: "NodeJs",
       logo: nodeLogo
     },
-    {
-      skillName: "angular",
-      fontAwesomeClassname: "fab fa-angular"
-    },
+    // {
+    //   skillName: "angular",
+    //   fontAwesomeClassname: "fab fa-angular"
+    // },
+
     {
       skillName: "sql-database",
       logo: sqlLogo
@@ -161,6 +156,18 @@ const skillsSection = {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
     },
+    // {
+    //   skillName: "kubernetes",
+    //   fontAwesomeClassname: "fab fa-docker"
+    // },
+    {
+      skillName: "Csharp",
+      fontAwesomeClassname: "fab fa-windows"
+    },
+    {
+      skillName: ".Net Web API",
+      fontAwesomeClassname: "fab fa-windows"
+    },
   ]
 };
 
@@ -174,7 +181,7 @@ const educationInfo = {
       logo: require("./assets/images/download.jfif"),
       subHeader: "Bachelor of Technology in Computer Science and Engineering",
       // duration: "July 2015 - May 2019",
-      desc: "Ranked top 10% in the program with CGPA: 8.1. Took courses about Software Engineering, Design and Analysis of algorithms, Operating Systems, ...",
+      desc: "Ranked top 5% in the program with CGPA: 8.1. Took courses about Software Engineering, Design and Analysis of algorithms, Operating Systems, ...",
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
@@ -219,6 +226,14 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
+    {
+      role: "Senior Software Engineer",
+      company: "Muzes AI",
+      companylogo: muzesLogo,
+      date: "",
+      desc: "",
+      descBullets: []
+    },
     {
       role: "Full Stack Developer",
       company: "FactSet LTD",
@@ -273,7 +288,7 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  githubUserName: "sravanth299", // Change to your github username to view your profile in Contact Section.
+  githubUserName: "sravanth-space", // Change to your github username to view your profile in Contact Section.
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to false,
   display: true,
   repoLogo: repoLogo,
@@ -390,14 +405,13 @@ const podcastSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle: "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+44 7871175422",
-  email_address: "sravk299@gmail.com"
+  number: "+44 7767990143",
+  email_address: "sravanthbaratam@gmail.com"
 };
 
 //Twitter Section
 
 const twitterDetails = {
-
-  userName: "sravanth299"
+  userName: "sravanth_space"
 };
 export { splashScreen, greeting, socialMediaLinks, skillsSection, educationInfo, techStack, workExperiences, openSource, bigProjects, achievementSection, blogSection, talkSection, podcastSection, contactInfo, twitterDetails };
