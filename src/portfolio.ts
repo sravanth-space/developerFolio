@@ -227,7 +227,7 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Senior Software Engineer",
+      role: "Lead Software Engineer",
       company: "Muzes AI",
       companylogo: muzesLogo,
       date: "",

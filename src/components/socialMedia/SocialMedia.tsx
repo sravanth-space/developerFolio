@@ -64,7 +64,7 @@ export default function socialMedia() {
 
       {socialMediaLinks.twitter ?
         <a href={socialMediaLinks.twitter} className="icon-button twitter" target="_blank" rel="noreferrer">
-          <i className="fab fa-twitter"></i>
+          <i className="fab fa-x-twitter"></i>
           <span></span>
         </a>
         :
