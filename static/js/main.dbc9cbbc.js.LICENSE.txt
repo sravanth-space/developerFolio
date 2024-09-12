@@ -4,6 +4,8 @@
   * (c) Dustin Diaz 2014 | License MIT
   */
 
+/*!  Copying ends here. */
+
 /**
  * @license React
  * react-dom.production.min.js
