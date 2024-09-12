@@ -31,6 +31,13 @@
   background-color: #3b5998;
 }
 
+/* .cal {
+  border-radius: 2rem;
+} */
+.cal i {
+  background-color: #3b5998;
+  /* border-radius: 2.6rem; */
+}
 .linkedin i {
   background-color: #0e76a8;
 }
@@ -67,7 +74,7 @@
   background-color: rgb(159, 210, 255);
 }
 .upwork {
-  background-color: #14A800;
+  background-color: #14a800;
 }
 
 /* Hover Transition */
@@ -81,6 +88,7 @@
 .stack-overflow i:hover,
 .medium i:hover,
 .skype i:hover,
+.cal i:hover,
 .upwork:hover {
   background-color: black;
 }

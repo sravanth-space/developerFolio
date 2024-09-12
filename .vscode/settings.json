@@ -1,10 +1,8 @@
 {
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
-    "eslint.validate": [
-        "javascript"
-    ],
-    "svg.preview.background": "transparent",
-    "editor.acceptSuggestionOnEnter": "on"
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.validate": ["javascript"],
+  "svg.preview.background": "transparent",
+  "editor.acceptSuggestionOnEnter": "on"
 }

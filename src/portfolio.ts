@@ -24,13 +24,18 @@ import fastAPILogo from './assets/images/fastapi.svg'
 import wiproLogo from './assets/images/Wipro_Primary_Logo_Color_RGB.svg'
 import fccLogo from './assets/images/fcc_primary_large.svg'
 import spotAwardLogo from './assets/images/factset-spot-award.png'
+import oxfordLogo from "./assets/images/oxford_summer_courses_logo.jpeg"
+
 import azureFundamentalsLogo from './assets/images/azure_fundamentals.png'
 import iiitLogo from './assets/images/iiit-new.png'
 import nodeLogo from './assets/images/node.svg'
 import repoLogo from "./assets/images/repo.svg";
 import repoFork from "./assets/images/repoFork.svg";
 import repoStar from "./assets/images/repoStar.svg";
-import splashAnimation from "./assets/lottie/splashAnimation.json"; // Rename to your file name for custom animation
+import splashAnimation from "./assets/lottie/splashAnimation.json";
+import natterLogo from "./assets/images/natter.svg";
+
+// Rename to your file name for custom animation
 // Splash Screen
 
 const splashScreen = {
@@ -63,7 +68,8 @@ const socialMediaLinks = {
   twitter: "https://twitter.com/sravanth-space",
   phone: "+44 7767990143",
   skype: "https://join.skype.com/invite/NJjGL1IcwhhP",
-  upwork: "https://www.upwork.com/freelancers/sravanth"
+  upwork: "https://www.upwork.com/freelancers/sravanth",
+  cal: "https://cal.com/sravanth/meet"
 };
 
 // Your Skills Section
@@ -177,6 +183,14 @@ const educationInfo = {
   display: true, // Set it to true to see education section
   schools: [
     {
+      schoolName: "University of Hertfordshire",
+      logo: require("./assets/images/uh.jpg"),
+      subHeader: "MSc in Data Science",
+      // duration: "Jan 2024 - Jan 2025",
+      // desc: "",
+    },
+
+    {
       schoolName: "National Institute of Technology Agartala",
       logo: require("./assets/images/download.jfif"),
       subHeader: "Bachelor of Technology in Computer Science and Engineering",
@@ -226,6 +240,14 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
+    {
+      role: "Subject Tutor",
+      company: "Oxford Summer Courses",
+      companylogo: oxfordLogo,
+      date: "",
+      desc: "",
+      descBullets: []
+    },
     {
       role: "Lead Software Engineer",
       company: "Muzes AI",
@@ -290,7 +312,7 @@ To know how to get github key look at readme.md */
 const openSource = {
   githubUserName: "sravanth-space", // Change to your github username to view your profile in Contact Section.
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to false,
-  display: true,
+  display: false,
   repoLogo: repoLogo,
   repoStar: repoStar,
   repoFork: repoFork
@@ -304,8 +326,9 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: "",
-      link: ""
+      image: natterLogo,
+      projectName: "Natter",
+      projectDesc: "Natter is a social media platform dedicated to men’s mental health 🌍 We enable men to express their emotions to a community of like minded men 🗣️.     Natter, because you Matter", footerLink: [{ url: "https://www.natter.org.uk/", name: "Visit Website" }]
     }
   ],
   display: false
@@ -405,7 +428,7 @@ const podcastSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle: "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+44 7767990143",
+  number: "",
   email_address: "sravanthbaratam@gmail.com"
 };
 
