@@ -22,7 +22,7 @@ var widthScreen = window.screen.width;
 export default function Twitter() {
   const {isDark} = useContext<any>(StyleContext);
 
-  if (twitterDetails.userName) {
+  if (twitterDetails.display) {
     return (
       <Suspense fallback={renderLoader()}>
         <div className="tw-main-div" id="twitter">

@@ -1,34 +1,33 @@
-
 /* Change this file to get your personal Portfolio */
 // Your Summary And Greeting Section
 
 import emoji from "react-easy-emoji";
-import muzesLogo from './assets/images/muzesLogo.svg';
-import factsetLogo from './assets/images/factset-logo.svg'
-import reduxLogo from './assets/images/redux-icon.svg'
-import javascriptLogo from './assets/images/javascriptLogo.svg'
-import pythonLogo from './assets/images/pythonLogo.svg'
-import typescriptLogo from './assets/images/typescriptLogo.svg'
-import reactLogo from './assets/images/react-js-icon.svg'
-import sqlLogo from './assets/images/sql-server-icon.svg'
-import sassLogo from './assets/images/sass-icon.svg'
-import jestLogo from './assets/images/jest-js-icon.svg'
-import cyPressLogo from './assets/images/cypress.svg'
-import htmlLogo from './assets/images/html-icon.svg'
-import cssLogo from './assets/images/css-icon.svg'
-import firebaseLogo from './assets/images/google-firebase-icon.svg'
-import azureLogo from './assets/images/azure-icon.svg'
-import awsLogo from './assets/images/aws-icon.svg'
-import fastAPILogo from './assets/images/fastapi.svg'
+import muzesLogo from "./assets/images/muzesLogo.svg";
+import factsetLogo from "./assets/images/factset-logo.svg";
+import reduxLogo from "./assets/images/redux-icon.svg";
+import javascriptLogo from "./assets/images/javascriptLogo.svg";
+import pythonLogo from "./assets/images/pythonLogo.svg";
+import typescriptLogo from "./assets/images/typescriptLogo.svg";
+import reactLogo from "./assets/images/react-js-icon.svg";
+import sqlLogo from "./assets/images/sql-server-icon.svg";
+import sassLogo from "./assets/images/sass-icon.svg";
+import jestLogo from "./assets/images/jest-js-icon.svg";
+import cyPressLogo from "./assets/images/cypress.svg";
+import htmlLogo from "./assets/images/html-icon.svg";
+import cssLogo from "./assets/images/css-icon.svg";
+import firebaseLogo from "./assets/images/google-firebase-icon.svg";
+import azureLogo from "./assets/images/azure-icon.svg";
+import awsLogo from "./assets/images/aws-icon.svg";
+import fastAPILogo from "./assets/images/fastapi.svg";
 // import pixlLogo from './assets/images/pixl_logo.svg'
-import wiproLogo from './assets/images/Wipro_Primary_Logo_Color_RGB.svg'
-import fccLogo from './assets/images/fcc_primary_large.svg'
-import spotAwardLogo from './assets/images/factset-spot-award.png'
-import oxfordLogo from "./assets/images/oxford_summer_courses_logo.jpeg"
+import wiproLogo from "./assets/images/Wipro_Primary_Logo_Color_RGB.svg";
+import fccLogo from "./assets/images/fcc_primary_large.svg";
+import spotAwardLogo from "./assets/images/factset-spot-award.png";
+import oxfordLogo from "./assets/images/oxford_summer_courses_logo.jpeg";
 
-import azureFundamentalsLogo from './assets/images/azure_fundamentals.png'
-import iiitLogo from './assets/images/iiit-new.png'
-import nodeLogo from './assets/images/node.svg'
+import azureFundamentalsLogo from "./assets/images/azure_fundamentals.png";
+import iiitLogo from "./assets/images/iiit-new.png";
+import nodeLogo from "./assets/images/node.svg";
 import repoLogo from "./assets/images/repo.svg";
 import repoFork from "./assets/images/repoFork.svg";
 import repoStar from "./assets/images/repoStar.svg";
@@ -44,19 +43,20 @@ const splashScreen = {
   duration: 100 // Set animation duration as per your animation
 };
 
-
 const greeting = {
   /* Your Summary And Greeting Section */
   username: "Sravanth",
   title: "Hi there, I'm Sravanth",
-  subTitle: emoji("A passionate Software Developer 🚀 having an experience of building Full Stack Web Applications with React / NodeJs and some other cool libraries and frameworks."),
-  resumeLink: "https://drive.google.com/file/d/1UE01eW_2aUJ_GqO1l4RRxztgVFF1he5u/view?usp=sharing"
+  subTitle: emoji(
+    "A passionate Software Developer 🚀 having an experience of building Full Stack Web Applications with React / NodeJs and some other cool libraries and frameworks."
+  ),
+  resumeLink:
+    "https://drive.google.com/file/d/1UE01eW_2aUJ_GqO1l4RRxztgVFF1he5u/view?usp=sharing"
 };
 
 // Your Social Media Link
 
 const socialMediaLinks = {
-
   github: "https://github.com/sravanth-space",
   linkedin: "https://www.linkedin.com/in/sravanth-baratam/",
   gmail: "sravanthbaratam@gmail.com",
@@ -137,10 +137,10 @@ const skillsSection = {
       skillName: "NodeJs",
       logo: nodeLogo
     },
-    // {
-    //   skillName: "angular",
-    //   fontAwesomeClassname: "fab fa-angular"
-    // },
+    {
+      skillName: "angular",
+      fontAwesomeClassname: "fab fa-angular"
+    },
 
     {
       skillName: "sql-database",
@@ -154,10 +154,10 @@ const skillsSection = {
       skillName: "aws",
       logo: awsLogo
     },
-    {
-      skillName: "firebase",
-      logo: firebaseLogo
-    },
+    // {
+    //   skillName: "firebase",
+    //   logo: firebaseLogo
+    // },
     {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
@@ -173,7 +173,7 @@ const skillsSection = {
     {
       skillName: ".Net Web API",
       fontAwesomeClassname: "fab fa-windows"
-    },
+    }
   ]
 };
 
@@ -185,8 +185,8 @@ const educationInfo = {
     {
       schoolName: "University of Hertfordshire",
       logo: require("./assets/images/uh.jpg"),
-      subHeader: "MSc in Data Science",
-      // duration: "Jan 2024 - Jan 2025",
+      subHeader: "MSc in Data Science"
+      // duration: "Jan 2024 - May 2025",
       // desc: "",
     },
 
@@ -195,12 +195,12 @@ const educationInfo = {
       logo: require("./assets/images/download.jfif"),
       subHeader: "Bachelor of Technology in Computer Science and Engineering",
       // duration: "July 2015 - May 2019",
-      desc: "Ranked top 5% in the program with CGPA: 8.1. Took courses about Software Engineering, Design and Analysis of algorithms, Operating Systems, ...",
+      desc: "Ranked top 5% in the program with CGPA: 8.1. Took courses about Software Engineering, Design and Analysis of algorithms, Operating Systems, ..."
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       // ]
-    },
+    }
     // {
     //   schoolName: "Sasi Junior College",
     //   logo: require("./assets/images/download1.jfif"),
@@ -212,7 +212,7 @@ const educationInfo = {
     //   // ]
     // }
   ]
-}
+};
 
 // Your top 3 proficient stacks/tech experience
 
@@ -220,8 +220,8 @@ const techStack = {
   viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend",  //Insert stack or technology you have experience in
-      progressPercentage: "80%"  //Insert relative proficiency in percentage
+      Stack: "Frontend", //Insert stack or technology you have experience in
+      progressPercentage: "80%" //Insert relative proficiency in percentage
     },
     {
       Stack: "Backend",
@@ -234,20 +234,11 @@ const techStack = {
   ]
 };
 
-
 // Your top 3 work experiences
 
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
-    {
-      role: "Subject Tutor",
-      company: "Oxford Summer Courses",
-      companylogo: oxfordLogo,
-      date: "",
-      desc: "",
-      descBullets: []
-    },
     {
       role: "Lead Software Engineer",
       company: "Muzes AI",
@@ -303,6 +294,14 @@ const workExperiences = {
       descBullets: []
       // date: "May 2018 – June 2018",
     }
+    // {
+    //   role: "Subject Tutor",
+    //   company: "Oxford Summer Courses",
+    //   companylogo: oxfordLogo,
+    //   date: "",
+    //   desc: "",
+    //   descBullets: []
+    // },
   ]
 };
 
@@ -318,7 +317,6 @@ const openSource = {
   repoFork: repoFork
 };
 
-
 // Some Big Projects You have worked with your company
 
 const bigProjects = {
@@ -328,8 +326,11 @@ const bigProjects = {
     {
       image: natterLogo,
       projectName: "Natter",
-      projectDesc: "Natter is a social media platform dedicated to men’s mental health 🌍 We enable men to express their emotions to a community of like minded men 🗣️.     Natter, because you Matter", footerLink: [{ url: "https://www.natter.org.uk/", name: "Visit Website" }]
-    }
+      projectDesc:
+        "Natter is a social media platform dedicated to men’s mental health 🌍 We enable men to express their emotions to a community of like minded men 🗣️.     Natter, because you Matter",
+      footerLink: [{url: "https://www.natter.org.uk/", name: "Visit Website"}]
+    },
+
   ],
   display: false
 };
@@ -339,40 +340,60 @@ const bigProjects = {
 const achievementSection = {
   display: true,
   title: emoji("Achievements And Certifications 🏆 "),
-  subtitle: "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+  subtitle:
+    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
 
   achievementsCards: [
     {
       title: "Spot Award",
-      subtitle: "I received a spot award for my outstanding performance at FactSet Research Systems.",
+      subtitle:
+        "I received a spot award for my outstanding performance at FactSet Research Systems.",
       image: spotAwardLogo,
-      footerLink: [{
-        name: "Award",
-        url: "https://drive.google.com/file/d/1NLKNgkP1Ys4-MsFprobYuADgOKTTL4vu/view?usp=sharing"
-      }]
+      footerLink: [
+        {
+          name: "Award",
+          url: "https://drive.google.com/file/d/1NLKNgkP1Ys4-MsFprobYuADgOKTTL4vu/view?usp=sharing"
+        }
+      ]
     },
     {
       title: "High Learning Agility Award",
-      subtitle: "I was awarded a high learning agility ward for my rapid learning and implementation at Wipro Technologies.",
+      subtitle:
+        "I was awarded a high learning agility ward for my rapid learning and implementation at Wipro Technologies.",
       image: wiproLogo,
       footerLink: []
     },
     {
       title: "Microsoft Certified: Azure Fundamentals",
       image: azureFundamentalsLogo,
-      footerLink: [{ name: "Certification", url: "https://www.credly.com/badges/201c03e2-6c34-4a81-ad92-2fb47a56d24d/public_url" },]
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://www.credly.com/badges/201c03e2-6c34-4a81-ad92-2fb47a56d24d/public_url"
+        }
+      ]
     },
     {
       title: "Front End Development Libraries",
       image: fccLogo,
       image_dark: factsetLogo,
-      footerLink: [{ name: "Certification", url: "https://freecodecamp.org/certification/sravanthbaratam/front-end-development-libraries" },]
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://freecodecamp.org/certification/sravanthbaratam/front-end-development-libraries"
+        }
+      ]
     },
     {
       title: "JavaScript Algorithms and Data Structures",
       image: fccLogo,
-      footerLink: [{ name: "Certification", url: "https://freecodecamp.org/certification/sravanthbaratam/javascript-algorithms-and-data-structures" },]
-    },
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://freecodecamp.org/certification/sravanthbaratam/javascript-algorithms-and-data-structures"
+        }
+      ]
+    }
   ]
 };
 
@@ -382,7 +403,8 @@ const blogSection = {
   display: true,
   displayMediumHashnodeBlogs: true,
   title: "Blogs",
-  subtitle: "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+  subtitle:
+    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
 
   blogs: [
     {
@@ -390,7 +412,7 @@ const blogSection = {
       title: "",
       description: "",
       image: ""
-    },
+    }
   ]
 };
 
@@ -399,7 +421,9 @@ const blogSection = {
 const talkSection = {
   display: false,
   title: "TALKS",
-  subtitle: emoji("I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"),
+  subtitle: emoji(
+    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+  ),
 
   talks: [
     {
@@ -420,14 +444,13 @@ const podcastSection = {
   subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
 
   // Please Provide with Your Podcast embeded Link
-  podcast: [
-    ""
-  ]
+  podcast: [""]
 };
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle: "Discuss a project or just want to say hi? My Inbox is open for all.",
+  subtitle:
+    "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "",
   email_address: "sravanthbaratam@gmail.com"
 };
@@ -435,6 +458,23 @@ const contactInfo = {
 //Twitter Section
 
 const twitterDetails = {
+  display: false,
   userName: "sravanth_space"
 };
-export { splashScreen, greeting, socialMediaLinks, skillsSection, educationInfo, techStack, workExperiences, openSource, bigProjects, achievementSection, blogSection, talkSection, podcastSection, contactInfo, twitterDetails };
+export {
+  splashScreen,
+  greeting,
+  socialMediaLinks,
+  skillsSection,
+  educationInfo,
+  techStack,
+  workExperiences,
+  openSource,
+  bigProjects,
+  achievementSection,
+  blogSection,
+  talkSection,
+  podcastSection,
+  contactInfo,
+  twitterDetails
+};
