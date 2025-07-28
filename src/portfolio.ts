@@ -24,6 +24,7 @@ import fccLogo from "./assets/images/fcc_primary_large.svg";
 import spotAwardLogo from "./assets/images/factset-spot-award.png";
 
 import azureFundamentalsLogo from "./assets/images/azure_fundamentals.png";
+import quaisrLogo from "./assets/images/quaisr.png";
 import iiitLogo from "./assets/images/iiit-new.png";
 import nodeLogo from "./assets/images/node.svg";
 import repoLogo from "./assets/images/repo.svg";
@@ -237,6 +238,14 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
+    {
+      role: "Software Engineer",
+      company: "Quaisr",
+      companylogo: quaisrLogo,
+      date: "",
+      desc: "",
+      descBullets: []
+    },
     {
       role: "Lead Software Engineer",
       company: "Muzes AI",
