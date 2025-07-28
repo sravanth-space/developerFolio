@@ -1,15 +1,15 @@
-import React, { useState, lazy, Suspense } from "react";
-import { openSource } from "../../portfolio";
+import React, {useState, lazy, Suspense} from "react";
+import {openSource} from "../../portfolio";
 import Contact from "../contact/Contact";
 import Loading from "../loading/Loading";
-import profileData from '../../data/profile.json';
+import profileData from "../../data/profile.json";
 
 const renderLoader = () => <Loading />;
-const GithubProfileCard = lazy(() =>
-  import("../../components/githubProfileCard/GithubProfileCard")
+const GithubProfileCard = lazy(
+  () => import("../../components/githubProfileCard/GithubProfileCard")
 );
 export default function Profile() {
-  const [prof, setrepo] = useState(profileData.data.user);
+  const [prof] = useState(profileData.data.user);
   if (
     openSource.display &&
     openSource.showGithubProfile === "true" &&

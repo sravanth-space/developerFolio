@@ -11,7 +11,7 @@ export default function Projects() {
   );
   const FailedLoading = () => null;
   const renderLoader = () => <Loading />;
-  const [repo, setrepo] = useState(profileData.data.user.pinnedItems.edges);
+  const [repo] = useState(profileData.data.user.pinnedItems.edges);
   // todo: remove useContex because is not supported
   const {isDark} = useContext<any>(StyleContext);
 

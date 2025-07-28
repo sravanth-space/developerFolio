@@ -4,7 +4,7 @@ import SocialMedia from "../socialMedia/SocialMedia";
 import {contactInfo} from "../../portfolio";
 import emoji from "react-easy-emoji";
 import {Fade} from "react-awesome-reveal";
-import locationLogo from "../../assets/images/locationLogo.svg";
+// import locationLogo from "../../assets/images/locationLogo.svg";
 export default function GithubProfileCard({prof}) {
   if (prof.hireable !== null) {
     prof.hireable = "Yes";

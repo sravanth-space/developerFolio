@@ -9,7 +9,7 @@ import hashnodeData from "../../data/hash-blogs.json";
 
 export default function Blogs() {
   const {isDark} = useContext<any>(StyleContext);
-  const [mediumHashnodeBlogs, _] = useState([
+  const [mediumHashnodeBlogs] = useState([
     ...blogsData.items,
     ...hashnodeData.items
   ]);

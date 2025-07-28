@@ -71,7 +71,6 @@
 
 .header .menu-icon {
   cursor: pointer;
-  display: inline-block;
   float: right;
   padding: 28px 20px;
   position: relative;
@@ -162,6 +161,17 @@
     display: none;
   }
 }
+.toggle-switch-container {
+  display: block;
+  padding: 15px 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.dark-menu .toggle-switch-container {
+  color: white;
+}
+
 @media (max-width: 960px) and (min-width: 768px) {
   .header {
     font-size: 12px;

@@ -1,4 +1,4 @@
-import React, {createRef, useContext, useRef} from "react";
+import React, {useContext, useRef} from "react";
 import {Fade, Slide} from "react-awesome-reveal";
 import "./EducationCard.css";
 import StyleContext from "../../contexts/StyleContext";

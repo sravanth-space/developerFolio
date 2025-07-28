@@ -15,7 +15,6 @@ import jestLogo from "./assets/images/jest-js-icon.svg";
 import cyPressLogo from "./assets/images/cypress.svg";
 import htmlLogo from "./assets/images/html-icon.svg";
 import cssLogo from "./assets/images/css-icon.svg";
-import firebaseLogo from "./assets/images/google-firebase-icon.svg";
 import azureLogo from "./assets/images/azure-icon.svg";
 import awsLogo from "./assets/images/aws-icon.svg";
 import fastAPILogo from "./assets/images/fastapi.svg";
@@ -23,7 +22,6 @@ import fastAPILogo from "./assets/images/fastapi.svg";
 import wiproLogo from "./assets/images/Wipro_Primary_Logo_Color_RGB.svg";
 import fccLogo from "./assets/images/fcc_primary_large.svg";
 import spotAwardLogo from "./assets/images/factset-spot-award.png";
-import oxfordLogo from "./assets/images/oxford_summer_courses_logo.jpeg";
 
 import azureFundamentalsLogo from "./assets/images/azure_fundamentals.png";
 import iiitLogo from "./assets/images/iiit-new.png";
@@ -329,8 +327,7 @@ const bigProjects = {
       projectDesc:
         "Natter is a social media platform dedicated to men’s mental health 🌍 We enable men to express their emotions to a community of like minded men 🗣️.     Natter, because you Matter",
       footerLink: [{url: "https://www.natter.org.uk/", name: "Visit Website"}]
-    },
-
+    }
   ],
   display: false
 };
