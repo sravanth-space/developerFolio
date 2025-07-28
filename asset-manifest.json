@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8ce81e58.css",
-    "main.js": "/static/js/main.308a0aa5.js",
+    "main.js": "/static/js/main.9e16c91b.js",
     "static/css/185.03ce30bd.chunk.css": "/static/css/185.03ce30bd.chunk.css",
     "static/js/185.ae674e8d.chunk.js": "/static/js/185.ae674e8d.chunk.js",
     "static/css/870.8a60dc08.chunk.css": "/static/css/870.8a60dc08.chunk.css",
@@ -27,6 +27,7 @@
     "static/media/jsFramework.svg": "/static/media/jsFramework.6f29b1988f86d14c7845.svg",
     "static/media/iiit-new.png": "/static/media/iiit-new.2210570b7131e9341998.png",
     "static/media/sql-server-icon.svg": "/static/media/sql-server-icon.1c79b990ab207d48b607ce664b4acc16.svg",
+    "static/media/quaisr.png": "/static/media/quaisr.93e94f7dee7f45d53b27.png",
     "static/media/download.jfif": "/static/media/download.73511300c0d33dfd533e.jfif",
     "static/media/facebookLogo.png": "/static/media/facebookLogo.f46d68b24e9b4f73ee8b.png",
     "static/media/uh-logo-black-rgb.png": "/static/media/uh-logo-black-rgb.177036690b9f0a1365b9.png",
@@ -66,7 +67,7 @@
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "static/media/fastapi.svg": "/static/media/fastapi.b342b1c57fecaf0ae1778beb71396c17.svg",
     "main.8ce81e58.css.map": "/static/css/main.8ce81e58.css.map",
-    "main.308a0aa5.js.map": "/static/js/main.308a0aa5.js.map",
+    "main.9e16c91b.js.map": "/static/js/main.9e16c91b.js.map",
     "185.03ce30bd.chunk.css.map": "/static/css/185.03ce30bd.chunk.css.map",
     "185.ae674e8d.chunk.js.map": "/static/js/185.ae674e8d.chunk.js.map",
     "870.8a60dc08.chunk.css.map": "/static/css/870.8a60dc08.chunk.css.map",
@@ -74,6 +75,6 @@
   },
   "entrypoints": [
     "static/css/main.8ce81e58.css",
-    "static/js/main.308a0aa5.js"
+    "static/js/main.9e16c91b.js"
   ]
 }
