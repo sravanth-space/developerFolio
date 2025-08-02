@@ -1,0 +1,71 @@
+{
+  "homepage": "https://sravanth.co.uk/",
+  "name": "sravanth-space.github.io",
+  "version": "0.2.0",
+  "private": true,
+  "dependencies": {
+    "@calcom/embed-react": "^1.5.2",
+    "@emotion/react": "^11.14.0",
+    "@sentry/react": "^9.2.0",
+    "@sentry/tracing": "^7.120.3",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.1.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "axios": "^1.8.1",
+    "colorthief": "^2.6.0",
+    "crypto-js": "^4.0.0",
+    "gh-pages": "^6.3.0",
+    "graphql": "^16.10.0",
+    "react": "^19.0.0",
+    "react-awesome-reveal": "^4.3.1",
+    "react-dom": "^19.0.0",
+    "react-easy-emoji": "^1.8.1",
+    "react-headroom": "^3.2.1",
+    "react-lottie": "^1.2.10",
+    "react-scripts": "5.0.1",
+    "react-twitter-embed": "4.0.4",
+    "sass": "^1.85.1",
+    "typescript": "^5.7.3"
+  },
+  "scripts": {
+    "predeploy": "yarn build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint . --ext .js",
+    "lint:fix": "eslint --fix --ext .js",
+    "format": "prettier --write \"./**/*.{js,css,json,scss}\"",
+    "check-format": "prettier -c \"./**/*.{js,css,json,scss}\"",
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "scrape": "node fetch.js"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.3%",
+      "not ie 11",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      ">0.3%",
+      "not ie 11",
+      "not dead",
+      "not op_mini all",
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "dotenv": "^17.2.1",
+    "prettier": "^3.5.2",
+    "source-map-explorer": "^2.5.3"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}
