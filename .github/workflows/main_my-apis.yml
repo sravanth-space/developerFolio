@@ -12,7 +12,6 @@ env:
   USERNAME_GITHUB: ${{vars.USERNAME_GITHUB}}
   USE_GITHUB_DATA: ${{vars.USE_GITHUB_DATA}}
   MEDIUM_USERNAME: ${{vars.MEDIUM_USERNAME}}
-  HASHNODE_USERNAME: ${{vars.HASHNODE_USERNAME}}
 jobs:
   scrape:
     runs-on: ubuntu-latest

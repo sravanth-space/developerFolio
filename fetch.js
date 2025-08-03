@@ -8,7 +8,6 @@ const GITHUB_TOKEN = process.env.REACT_APP_GITHUB_TOKEN;
 const GITHUB_USERNAME = process.env.USERNAME_GITHUB;
 const USE_GITHUB_DATA = process.env.USE_GITHUB_DATA;
 const MEDIUM_USERNAME = process.env.MEDIUM_USERNAME;
-const HASHNODE_USERNAME = process.env.HASHNODE_USERNAME;
 
 // API URLs
 const GITHUB_GRAPHQL_URL = "https://api.github.com/graphql";
@@ -141,16 +140,10 @@ async function fetchMediumData() {
 }
 
 async function fetchHashnodeData() {
-  if (!HASHNODE_USERNAME) {
-    return;
-  }
-
-  console.log(`Fetching Hashnode blogs data for ${HASHNODE_USERNAME}`);
+  console.log("Fetching Hashnode blogs data from blogs.sravanth.co.uk");
 
   try {
-    const response = await axios.get(
-      `${RSS2JSON_API_URL}?rss_url=${HASHNODE_RSS_URL}`
-    );
+    const response = await axios.get(`${HASHNODE_RSS_URL}`);
     await writeJsonFile("./src/data/hash-blogs.json", response.data);
   } catch (error) {
     console.error("Hashnode API Error:", error.response?.data || error.message);

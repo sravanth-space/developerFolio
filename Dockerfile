@@ -1,29 +1,33 @@
 # This file is the main docker file configurations
 
 # Official Node JS runtime as a parent image
-FROM node:10.16.0-alpine
+FROM node:20-alpine
 
-# Set the working directory to ./app
+# Set the working directory to /app
 WORKDIR /app
 
+# Create non-root user for security
+RUN addgroup -g 1001 -S nodejs
+RUN adduser -S react -u 1001
+
 # Install app dependencies
-# A wildcard is used to ensure both package.json AND package-lock.json are copied
-# where available (npm@5+)
-COPY package.json ./
+# Copy package files first for better caching
+COPY package.json yarn.lock ./
 
 RUN apk add --no-cache git
 
-# Install any needed packages
-RUN npm install
-
-# Audit fix npm packages
-RUN npm audit fix
+# Install dependencies using yarn
+RUN yarn install --frozen-lockfile
 
 # Bundle app source
-COPY . /app
+COPY . .
+
+# Change ownership to non-root user
+RUN chown -R react:nodejs /app
+USER react
 
 # Make port 3000 available to the world outside this container
 EXPOSE 3000
 
-# Run app.js when the container launches
-CMD ["npm", "start"]
+# Run the app when the container launches
+CMD ["yarn", "start"]
