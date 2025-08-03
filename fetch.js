@@ -140,15 +140,9 @@ async function fetchMediumData() {
 }
 
 async function fetchHashnodeData() {
-  console.log("Fetching Hashnode blogs data from blogs.sravanth.co.uk");
-
-  try {
-    const response = await axios.get(`${HASHNODE_RSS_URL}`);
-    await writeJsonFile("./src/data/hash-blogs.json", response.data);
-  } catch (error) {
-    console.error("Hashnode API Error:", error.response?.data || error.message);
-    throw new Error(ERR.requestFailedHashnode);
-  }
+  console.log("Skipping Hashnode blogs data (RSS feed conversion issues)");
+  // TODO: Fix RSS2JSON compatibility or find alternative solution
+  return;
 }
 
 async function main() {
