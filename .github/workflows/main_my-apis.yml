@@ -1,36 +1,38 @@
 name: Scrape Data
 on:
-    workflow_dispatch:
-    schedule:
-        - cron: "0 0 * * *" # https://crontab.guru/every-day
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *" # https://crontab.guru/every-day
 env:
-    DATA_FILENAME: "src/data"
-    PROFILE_DATA: "src/data/profile.json"
-    BLOG_DATA: "src/data/blogs.json"
-    CI: false
-    REACT_APP_GITHUB_TOKEN: ${{ secrets.OPEN_SOURCE_TOKEN }}
-    USERNAME_GITHUB: ${{vars.USERNAME_GITHUB}}
-    USE_GITHUB_DATA: ${{vars.USE_GITHUB_DATA}}
-    MEDIUM_USERNAME: ${{vars.MEDIUM_USERNAME}}
+  DATA_FILENAME: "src/data"
+  PROFILE_DATA: "src/data/profile.json"
+  BLOG_DATA: "src/data/blogs.json"
+  CI: false
+  REACT_APP_GITHUB_TOKEN: ${{ secrets.OPEN_SOURCE_TOKEN }}
+  USERNAME_GITHUB: ${{vars.USERNAME_GITHUB}}
+  USE_GITHUB_DATA: ${{vars.USE_GITHUB_DATA}}
+  MEDIUM_USERNAME: ${{vars.MEDIUM_USERNAME}}
+  HASHNODE_USERNAME: ${{vars.HASHNODE_USERNAME}}
 jobs:
-    scrape:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v3
-            - name: Set up Node.js version
-              uses: actions/setup-node@v3
-              with:
-                node-version: '16.x'
-            - name: yarn install
-              run: |
-                yarn install
-            - name: Scrape Data
-              run: |
-                yarn scrape
-            - name: Commit changes
-              uses: EndBug/add-and-commit@v9.1.1
-              with:
-                author_name: Sravanth
-                author_email: sravanthbaratam@gmail.com
-                message: 'chore(generated): updated jsons automatically'
-                add: '*.json'
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node.js version
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18.x"
+          cache: "yarn"
+      - name: yarn install
+        run: |
+          yarn install
+      - name: Scrape Data
+        run: |
+          yarn scrape
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9.1.1
+        with:
+          author_name: Sravanth
+          author_email: sravanthbaratam@gmail.com
+          message: "chore(generated): updated jsons automatically"
+          add: "src/data/*.json"
