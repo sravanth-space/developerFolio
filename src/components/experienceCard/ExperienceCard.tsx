@@ -32,10 +32,16 @@ export default function ExperienceCard({ cardInfo, isDark }) {
     }
   }
 
-  function rgb(values) {
-    return typeof values === "undefined"
-      ? null
-      : "rgb(" + values.join(", ") + ")";
+  function rgb(values: any) {
+    if (values === undefined || values === null) return null;
+    if (Array.isArray(values)) return "rgb(" + values.join(", ") + ")";
+    if (typeof values === "object") {
+      if (typeof values.r === "number" && typeof values.g === "number" && typeof values.b === "number") {
+        return `rgb(${values.r}, ${values.g}, ${values.b})`;
+      }
+      if (typeof values[0] === "number") return "rgb(" + Array.from(values).join(", ") + ")";
+    }
+    return null;
   }
 
   const GetDescBullets = ({ descBullets, isDark }) => {
