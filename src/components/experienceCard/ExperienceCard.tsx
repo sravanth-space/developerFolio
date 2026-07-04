@@ -1,15 +1,35 @@
-import React, {useState, useRef} from "react";
+import React, { useState, useRef } from "react";
 import "./ExperienceCard.css";
-import ColorThief from "colorthief";
-
-export default function ExperienceCard({cardInfo, isDark}) {
-  const [colorArrays, setColorArrays] = useState([]);
+export default function ExperienceCard({ cardInfo, isDark }) {
+  const [colorArrays, setColorArrays] = useState<any[]>([]);
   // const imgRef = createRef();
   const imgRef = useRef<HTMLImageElement>(null);
 
-  function getColorArrays() {
-    const colorThief = new ColorThief();
-    setColorArrays(colorThief.getPalette(imgRef.current)[0]);
+  async function getColorArrays() {
+    try {
+      if (!imgRef.current) return;
+      const module = await import("colorthief");
+      // prefer synchronous browser API when available
+      const getPaletteSync = module.getPaletteSync ?? (module.default && module.default.getPaletteSync);
+      const palette = getPaletteSync ? getPaletteSync(imgRef.current) : await module.getPalette(imgRef.current);
+      const first = palette ? palette[0] : undefined;
+      let rgbArr: number[] = [];
+      if (Array.isArray(first)) {
+        rgbArr = first as number[];
+      } else if (first && typeof first === "object") {
+        if (typeof (first as any).r === "number") {
+          rgbArr = [(first as any).r, (first as any).g, (first as any).b];
+        } else if (typeof (first as any).rgb === "function") {
+          rgbArr = (first as any).rgb();
+        } else if (typeof (first as any).toRgb === "function") {
+          rgbArr = (first as any).toRgb();
+        }
+      }
+      setColorArrays(rgbArr);
+    } catch (e) {
+      // fallback: leave colorArrays empty
+      setColorArrays([]);
+    }
   }
 
   function rgb(values) {
@@ -18,23 +38,23 @@ export default function ExperienceCard({cardInfo, isDark}) {
       : "rgb(" + values.join(", ") + ")";
   }
 
-  const GetDescBullets = ({descBullets, isDark}) => {
+  const GetDescBullets = ({ descBullets, isDark }) => {
     return descBullets
       ? descBullets.map(item => (
-          <li
-            className={isDark ? "subTitle dark-mode-text" : "subTitle"}
-            key={item}
-          >
-            {item}
-          </li>
-        ))
+        <li
+          className={isDark ? "subTitle dark-mode-text" : "subTitle"}
+          key={item}
+        >
+          {item}
+        </li>
+      ))
       : null;
   };
 
   return (
     <div className={isDark ? "experience-card-dark" : "experience-card"}>
       <div
-        style={{background: rgb(colorArrays) ?? ""}}
+        style={{ background: rgb(colorArrays) ?? "" }}
         className="experience-banner"
       >
         <div className="experience-blurred_div"></div>

@@ -1,12 +1,14 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import "./Contact.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import {contactInfo} from "../../portfolio";
-import {Fade} from "react-awesome-reveal";
+import contactMail from "../../assets/images/contactMail.webp";
+import contactMailDark from "../../assets/images/contactMailDark.svg";
+import { contactInfo } from "../../portfolio";
+import { Fade } from "react-awesome-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Contact() {
-  const {isDark} = useContext<any>(StyleContext);
+  const { isDark } = useContext<any>(StyleContext);
   return (
     <Fade duration={1000}>
       <div className="main contact-margin-top" id="contact">
@@ -47,9 +49,7 @@ export default function Contact() {
           <div className="contact-image-div">
             <img
               alt="Sravanth Working"
-              src={require(`../../assets/images/${
-                isDark ? "contactMailDark.svg" : "contactMail.webp"
-              }`)}
+              src={isDark ? contactMailDark : contactMail}
             ></img>
           </div>
         </div>
