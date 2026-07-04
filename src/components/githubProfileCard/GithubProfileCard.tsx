@@ -1,11 +1,11 @@
 import React from "react";
 import "./GithubProfileCard.css";
 import SocialMedia from "../socialMedia/SocialMedia";
-import {contactInfo} from "../../portfolio";
+import { contactInfo } from "../../portfolio";
 import emoji from "react-easy-emoji";
-import {Fade} from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 // import locationLogo from "../../assets/images/locationLogo.svg";
-export default function GithubProfileCard({prof}) {
+export default function GithubProfileCard({ prof }) {
   if (prof.hireable !== null) {
     prof.hireable = "Yes";
   } else {
@@ -40,6 +40,7 @@ export default function GithubProfileCard({prof}) {
               src={prof.avatarUrl}
               alt={prof.name}
               className="profile-image"
+              loading="lazy"
             />
           </div>
         </div>

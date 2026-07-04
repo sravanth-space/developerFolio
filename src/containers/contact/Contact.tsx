@@ -50,6 +50,7 @@ export default function Contact() {
             <img
               alt="Sravanth Working"
               src={isDark ? contactMailDark : contactMail}
+              loading="lazy"
             ></img>
           </div>
         </div>

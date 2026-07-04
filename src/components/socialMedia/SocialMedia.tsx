@@ -1,6 +1,6 @@
 import React from "react";
 import "./SocialMedia.css";
-import {socialMediaLinks} from "../../portfolio";
+import { socialMediaLinks } from "../../portfolio";
 import upwork from "../../assets/images/upwork.svg";
 import "@calcom/embed-react";
 
@@ -148,7 +148,8 @@ export default function socialMedia() {
             src={upwork}
             alt="Upwork"
             className="card-image"
-            style={{width: "20px"}}
+            style={{ width: "20px" }}
+            loading="lazy"
           ></img>
         </a>
       ) : null}
@@ -162,7 +163,7 @@ export default function socialMedia() {
         >
           <i
             className="fa-brands fa-skype"
-            style={{color: "#099ade"}}
+            style={{ color: "#099ade" }}
             title="Skype"
           ></i>
           <span></span>
