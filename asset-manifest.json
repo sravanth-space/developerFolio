@@ -1,26 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.95fa68dc.css",
-    "main.js": "/static/js/main.47fc8ffd.js",
-    "static/js/253.e0234795.chunk.js": "/static/js/253.e0234795.chunk.js",
-    "static/css/185.03ce30bd.chunk.css": "/static/css/185.03ce30bd.chunk.css",
-    "static/js/185.22926761.chunk.js": "/static/js/185.22926761.chunk.js",
-    "static/css/870.8a60dc08.chunk.css": "/static/css/870.8a60dc08.chunk.css",
-    "static/js/870.4202fa26.chunk.js": "/static/js/870.4202fa26.chunk.js",
-    "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
-    "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "main.css": "/static/css/main.9b2e7bcd.css",
+    "main.js": "/static/js/main.cc13a24a.js",
     "static/media/factset-spot-award.png": "/static/media/factset-spot-award.99e825ae2d35c449991e.png",
-    "static/media/contactMail.webp": "/static/media/contactMail.298a597edb8258fc13e5.webp",
     "static/media/fcc_primary_large.svg": "/static/media/fcc_primary_large.ec5de68841b34d30fd2d1990e9b26377.svg",
     "static/media/azure_fundamentals.png": "/static/media/azure_fundamentals.84188eee8da867b0d07e.png",
-    "static/media/contactMailDark.svg": "/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
     "static/media/iiit-new.png": "/static/media/iiit-new.2210570b7131e9341998.png",
     "static/media/sql-server-icon.svg": "/static/media/sql-server-icon.1c79b990ab207d48b607ce664b4acc16.svg",
     "static/media/quaisr.png": "/static/media/quaisr.93e94f7dee7f45d53b27.png",
     "static/media/download.jfif": "/static/media/download.73511300c0d33dfd533e.jfif",
     "static/media/Wipro_Primary_Logo_Color_RGB.svg": "/static/media/Wipro_Primary_Logo_Color_RGB.d8b569aac0db9ae488d81f8f7ed3b321.svg",
     "static/media/node.svg": "/static/media/node.4ed7880fc0831bf7de9673725766d391.svg",
-    "static/media/skill.svg": "/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
     "static/media/natter.svg": "/static/media/natter.abe35cf8649f15f85173920ff180a9cf.svg",
     "static/media/pythonLogo.svg": "/static/media/pythonLogo.d51a4f30571c973f22149adb30168b29.svg",
     "static/media/muzesLogo.svg": "/static/media/muzesLogo.9bdb9e8e6d44baf0412893e582e9064f.svg",
@@ -35,25 +25,18 @@
     "static/media/redux-icon.svg": "/static/media/redux-icon.8769cd28852c0bae26e7e9eda219d47b.svg",
     "static/media/jest-js-icon.svg": "/static/media/jest-js-icon.62f7f2b2200499bc1caae57294534ae3.svg",
     "static/media/typescriptLogo.svg": "/static/media/typescriptLogo.9fb8bf6ecc3c89eb25ce35331c215ce8.svg",
-    "static/media/upwork.svg": "/static/media/upwork.6eaee7dd50e5d98d10e513a76b4c98ca.svg",
     "static/media/javascriptLogo.svg": "/static/media/javascriptLogo.cc9251b7b69a7da77d451f1d9720ea74.svg",
     "static/media/html-icon.svg": "/static/media/html-icon.e452dcbf9f0349fd611dbd0bd91a169a.svg",
     "static/media/azure-icon.svg": "/static/media/azure-icon.2b83c7a3440214503ce4d3ed2a406aec.svg",
     "static/media/repoStar.svg": "/static/media/repoStar.da7d0bb76dc226a1f88d50f17ed92f7d.svg",
     "static/media/repo.svg": "/static/media/repo.ff86ae8e33e864e44c7a27a10439e18d.svg",
     "static/media/repoFork.svg": "/static/media/repoFork.a18cd92105fc9b4287472219db96eff0.svg",
-    "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "static/media/fastapi.svg": "/static/media/fastapi.b342b1c57fecaf0ae1778beb71396c17.svg",
-    "main.95fa68dc.css.map": "/static/css/main.95fa68dc.css.map",
-    "main.47fc8ffd.js.map": "/static/js/main.47fc8ffd.js.map",
-    "253.e0234795.chunk.js.map": "/static/js/253.e0234795.chunk.js.map",
-    "185.03ce30bd.chunk.css.map": "/static/css/185.03ce30bd.chunk.css.map",
-    "185.22926761.chunk.js.map": "/static/js/185.22926761.chunk.js.map",
-    "870.8a60dc08.chunk.css.map": "/static/css/870.8a60dc08.chunk.css.map",
-    "870.4202fa26.chunk.js.map": "/static/js/870.4202fa26.chunk.js.map"
+    "main.9b2e7bcd.css.map": "/static/css/main.9b2e7bcd.css.map",
+    "main.cc13a24a.js.map": "/static/js/main.cc13a24a.js.map"
   },
   "entrypoints": [
-    "static/css/main.95fa68dc.css",
-    "static/js/main.47fc8ffd.js"
+    "static/css/main.9b2e7bcd.css",
+    "static/js/main.cc13a24a.js"
   ]
 }
