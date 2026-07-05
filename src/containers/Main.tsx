@@ -126,7 +126,13 @@ const Main = () => {
             <div className="section-label">Experience</div>
             {workExperiences.experience.map((exp: any, i: number) => (
               <div className="exp-item" key={i}>
-                <span className="exp-dot" />
+                {exp.companylogo ? (
+                  <span className="exp-logo">
+                    <img src={exp.companylogo} alt={exp.company} loading="lazy" />
+                  </span>
+                ) : (
+                  <span className="exp-dot" />
+                )}
                 <div>
                   <div className="exp-role">{exp.role}</div>
                   <div className="exp-company">{exp.company}</div>

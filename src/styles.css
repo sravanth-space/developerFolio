@@ -291,6 +291,26 @@ section {
   margin-top: 9px;
 }
 
+.exp-logo {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid var(--border);
+  padding: 7px;
+  margin-top: 2px;
+}
+
+.exp-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
 .exp-role {
   font-weight: 650;
   color: var(--text-strong);
