@@ -183,7 +183,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "University of Hertfordshire",
-      logo: require("./assets/images/uh.jpg"),
+      logo: require("./assets/images/uh.webp"),
       subHeader: "MSc in Data Science"
       // duration: "Jan 2024 - May 2025",
       // desc: "",
@@ -335,7 +335,7 @@ const bigProjects = {
       projectName: "Natter",
       projectDesc:
         "Natter is a social media platform dedicated to men’s mental health 🌍 We enable men to express their emotions to a community of like minded men 🗣️.     Natter, because you Matter",
-      footerLink: [{url: "https://www.natter.org.uk/", name: "Visit Website"}]
+      footerLink: [{ url: "https://www.natter.org.uk/", name: "Visit Website" }]
     }
   ],
   display: false
