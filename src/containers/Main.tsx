@@ -161,9 +161,16 @@ const Main = () => {
             <div className="section-label">Education</div>
             {educationInfo.schools.map((s: any, i: number) => (
               <div className="edu-item" key={i}>
-                <div className="edu-school">{s.schoolName}</div>
-                {s.subHeader && <div className="edu-sub">{s.subHeader}</div>}
-                {s.desc && <div className="edu-desc">{s.desc}</div>}
+                {s.logo && (
+                  <span className="exp-logo">
+                    <img src={s.logo} alt={s.schoolName} loading="lazy" />
+                  </span>
+                )}
+                <div>
+                  <div className="edu-school">{s.schoolName}</div>
+                  {s.subHeader && <div className="edu-sub">{s.subHeader}</div>}
+                  {s.desc && <div className="edu-desc">{s.desc}</div>}
+                </div>
               </div>
             ))}
           </section>

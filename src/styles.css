@@ -354,6 +354,8 @@ section {
 /* ---- education ---- */
 
 .edu-item {
+  display: flex;
+  gap: 16px;
   padding: 18px 0;
   border-bottom: 1px solid var(--border);
 }
